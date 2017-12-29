@@ -3,66 +3,66 @@ name=main_httppost
 status=active
 action=select
 style=order
-condition=start:location|#visitorname,rule-find-start,?|ÄúÏë´ÓÄÄ¸ö³ÇÊĞ³ö·¢£¿|#visitornameÏë´Ó[]³ö·¢¡£
-condition=destination:location|#visitorname,rule-find-destination,?|ÄúÏë·Éµ½ÄÄ¸ö³ÇÊĞ£¿|#visitornameÏë·Éµ½[]¡£
-condition=depart_time:time|#visitorname,rule-find-departtime,?|ÄúÏëÊ²Ã´Ê±ºò³ö·¢£¿|#visitornameÏë[]³ö·¢¡£
-reference=today|#visitorname,rule-same-day-return,?|×ª»»|#visitornameÒª»ù×¼ÈÕ·µ»Ø¡£
-reference=return|#visitorname,rule-find-return,?|ÊÇÍù·µ»¹ÊÇµ¥³Ì£¿|#visitornameÏë¶©[]µÄÆ±¡£=+µ¥³Ì+Íù·µ+À´»Ø+·µ»Ø+·µ³Ì+·µ»ØµÄ
-reference=return_time:time|#visitorname,rule-find-returntime,?|ÄúÏëÊ²Ã´Ê±ºò·µ»Ø£¿|#visitornameÏë[]·µ»Ø¡£
-reference=cabinclass|#visitorname,rule-find-cabinclass,?|ÄúÑ¡ÔñÊ²Ã´²ÕÎ»£¿|#visitornameÏëÒª[]¡£=++²ÖÎ»
-reference=ticket_amount:number|#visitorname,rule-find-ticket-amount,?|ÄúÒª¼¸ÕÅÆ±£¿|#visitornameÏëÒª[]ÕÅÆ±¡£
-reference=companion|#visitorname,rule-find-companion,?|ÄãÒªºÍ±ğÈËÒ»ÆğÍ¬ĞĞÂğ£¿|Ò»¹²ÓĞ1Î»³ÉÈË¡£
-reference=couple|#visitorname,rule-find-couple,?|ÄãÊÇ·òÆŞÒ»Æğ×ßÂğ£¿|Ò»¹²ÓĞ2Î»³ÉÈË
-reference=adult_number:number|#visitorname,rule-find-adultnumber,?|Ò»¹²ÓĞ¼¸Î»³ÉÈË£¿|Ò»¹²ÓĞ[]Î»³ÉÈË¡£
-reference=has_adult|#visitorname,rule-find-hasadult,?|ÊÇ·ñÓĞ³ÉÈË£¿|ÓĞ³ÉÈË¡£=+ÓĞ-Ã»~Ã»ÓĞ³ÉÈË¡£=+Ã»ÓĞ
-reference=child_number:number|#visitorname,rule-find-childnumber,?|Ò»¹²ÓĞ¼¸Î»¶ùÍ¯£¿|Ò»¹²ÓĞ[]Î»¶ùÍ¯¡£
-reference=relative_companion|#visitorname,rule-find-relative-companion,?|¶¼ÓĞÄÄĞ©Ç×ÆİÍ¬ĞĞ£¿|#visitornameºÍ[]Ò»ÆğÍ¬ĞĞ¡£=++Ç×ÆİÃû
-reference=included_child_number:number|#visitorname,rule-find-included-child-number,?|ÆäÖĞÓĞ¼¸Î»¶ùÍ¯£¿|ÆäÖĞÓĞ[]Î»¶ùÍ¯¡£
-reference=has_child|#visitorname,rule-find-haschild,?|ÊÇ·ñÓĞ¶ùÍ¯£¿|ÓĞ¶ùÍ¯¡£=+ÓĞ-Ã»~Ã»ÓĞ¶ùÍ¯¡£=+Ã»ÓĞ
-reference=infant_number:number|#visitorname,rule-find-infantnumber,?|Ò»¹²ÓĞ¼¸Î»Ó¤¶ù£¿|Ò»¹²ÓĞ[]Î»Ó¤¶ù¡£
-reference=in_seat_infant_number:number|#visitorname,rule-find-in-seat-infant-number,?|Ò»¹²Òª¼¸¸öÓ¤¶ù×ùÎ»£¿|Ó¤¶ù×ùÎ»Òª[]¸ö¡£
-reference=included_infant_number:number|#visitorname,rule-find-included-infant-number,?|ÆäÖĞÓĞ¼¸Î»Ó¤¶ù£¿|ÆäÖĞÓĞ[]Î»Ó¤¶ù¡£
-reference=has_infant|#visitorname,rule-find-hasinfant,?|ÊÇ·ñÓĞÓ¤¶ù£¿|ÓĞÓ¤¶ù¡£=+ÓĞ-Ã»~Ã»ÓĞÓ¤¶ù¡£=+Ã»ÓĞ
-reference=check_bag_number:number|#visitorname,rule-find-checkbagnumber,?|Ò»¹²ÓĞ¼¸¸öÍĞÔËĞĞÀî£¿|Ò»¹²ÓĞ[]¸öÍĞÔËĞĞÀî¡£
-reference=has_check_bag|#visitorname,rule-find-hascheckbag,?|ÊÇ·ñÓĞÍĞÔËĞĞÀî£¿|#visitornameÓĞÍĞÔËĞĞÀî¡£=+ÓĞ-Ã»~#visitornameÃ»ÓĞÍĞÔËĞĞÀî¡£=+Ã»ÓĞ
-reference=bag_total_weight:number|#visitorname,rule-find-bagtotalweight,?|ÍĞÔËĞĞÀîµÄ×ÜÖØÁ¿ÊÇ¶àÉÙ£¿|ÍĞÔËĞĞÀîÒ»¹²[]µ¥Î»¡£
-reference=bag_weight_unit|#visitorname,rule-find-bagweightunit,?|ÍĞÔËĞĞÀîµÄÖØÁ¿ÊÇÊ²Ã´£¿|ÖØÁ¿µ¥Î»ÊÇ[]¡£=+°õ+¹«½ï+½ï+Ç§¿Ë+kg+KG+Kg+lb
-reference=bag_indi_weight:number|#visitorname,rule-find-bagindiweight,?|ÍĞÔËĞĞÀîµÄ×î´óÖØÁ¿ÊÇ¶àÉÙ£¿|ÍĞÔËĞĞÀî×î´ó[]µ¥Î»¡£
-reference=cheap_flight|#visitorname,rule-find-cheapflight,?|ÊÇ·ñÒªÁ®¼Ûº½¿Õ£¿|#visitornameÏëÒªÁ®¼Ûº½¿Õ¡£=Òª+ÏëÒª+Á®¼Ûº½¿Õ+Á®º½-²»~#visitorname²»ÏëÒªÁ®¼Ûº½¿Õ¡£=+²»Òª+²»ÏëÒª+²»+²»Ñ¡+±ğÑ¡+±ğ¸ø+ºöÂÔ
-reference=want_comp|#visitorname,rule-find-wantcomp,?|ÏëÑ¡ÓÃÄÄ¼Òº½¿Õ¹«Ë¾£¿|#visitornameÏëÑ¡ÓÃ[]µÄ»úÆ±¡£=++º½¿Õ¹«Ë¾
-reference=not_comp|#visitorname,rule-find-notcomp,?|²»ÏëÑ¡ÓÃÄÄ¼Òº½¿Õ¹«Ë¾£¿|#visitorname²»ÏëÑ¡ÓÃ[]µÄ»úÆ±¡£=++º½¿Õ¹«Ë¾~#visitornameÒªÆäËû¹«Ë¾¡£=+ÆäËû+±ğµÄ+±ğ+»»
-reference=want_plane|#visitorname,rule-find-wantplane,?|ÏëÑ¡ÓÃÄÄÖÖ»úĞÍ£¿|#visitornameÏëÑ¡ÓÃ[]¡£=++»úĞÍ
-reference=not_plane|#visitorname,rule-find-notplane,?|²»ÏëÑ¡ÓÃÄÄÖÖ»úĞÍ£¿|#visitorname²»ÏëÑ¡ÓÃ[]¡£=++»úĞÍ
-reference=depart_board_time:time|#visitorname,rule-find-depart-board-time,?|È¥³ÌÏëÑ¡ÓÃÊ²Ã´µÇ»úÊ±¼ä£¿|#visitornameÒªÔÚ[]µÇ»úÍùÈ¥·É¡£
-reference=return_board_time:time|#visitorname,rule-find-return-board-time,?|»Ø³ÌÏëÑ¡ÓÃÊ²Ã´µÇ»úÊ±¼ä£¿|#visitornameÒªÔÚ[]ÉÏÁË·É»úÍù»Ø·É¡£
-reference=depart_board_period|#visitorname,rule-find-depart-board-period,?|È¥³ÌÏëÑ¡ÓÃÊ²Ã´Ê±¼ä¶ÎµÇ»ú£¿|#visitornameÒªÔÚ[]µÇ»úÍùÈ¥·É¡£=+ÔçÉÏ+Ôç³¿+ÉÏÎç+ÖĞÎç+ÏÂÎç+ÍíÉÏ+Ò¹Àï+Áè³¿
-reference=return_board_period|#visitorname,rule-find-return-board-period,?|»Ø³ÌÏëÑ¡ÓÃÊ²Ã´Ê±¼ä¶ÎµÇ»ú£¿|#visitornameÒªÔÚ[]ÉÏÁË·É»úÍù»Ø·É¡£=+ÔçÉÏ+Ôç³¿+ÉÏÎç+ÖĞÎç+ÏÂÎç+ÍíÉÏ+Ò¹Àï+Áè³¿
-reference=depart_not_board_time:time|#visitorname,rule-find-depart-not-board-time,?|È¥³Ì²»ÏëÑ¡ÓÃÊ²Ã´µÇ»úÊ±¼ä£¿|#visitorname²»ÒªÔÚ[]µÇ»úÍùÈ¥·É¡£
-reference=return_not_board_time:time|#visitorname,rule-find-return-not-board-time,?|»Ø³Ì²»ÏëÑ¡ÓÃÊ²Ã´µÇ»úÊ±¼ä£¿|#visitorname²»ÒªÔÚ[]µÇ»úÍù»Ø·É¡£
-reference=depart_not_board_period|#visitorname,rule-find-depart-not-board-period,?|È¥³Ì²»ÏëÑ¡ÓÃÊ²Ã´Ê±¼ä¶ÎµÇ»ú£¿|#visitorname²»ÒªÔÚ[]µÇ»úÍùÈ¥·É¡£=+ÔçÉÏ+Ôç³¿+ÉÏÎç+ÖĞÎç+ÏÂÎç+ÍíÉÏ+Ò¹Àï+Áè³¿
-reference=return_not_board_period|#visitorname,rule-find-return-not-board-period,?|»Ø³Ì²»ÏëÑ¡ÓÃÊ²Ã´Ê±¼ä¶ÎµÇ»ú£¿|#visitorname²»ÒªÔÚ[]µÇ»úÍù»Ø·É¡£=+ÔçÉÏ+Ôç³¿+ÉÏÎç+ÖĞÎç+ÏÂÎç+ÍíÉÏ+Ò¹Àï+Áè³¿
-reference=depart_arrival_time:time|#visitorname,rule-find-depart-arrival-time,?|È¥³ÌÏëÒªÊ²Ã´Ê±¼äµÖ´ï£¿|#visitornameÒªÔÚ[]ÍùÈ¥·ÉÊ±µÖ´ï¡£
-reference=return_arrival_time:time|#visitorname,rule-find-return-arrival-time,?|»Ø³ÌÏëÒªÊ²Ã´Ê±¼äµÖ´ï£¿|#visitornameÏëÔÚ[]Íù»Ø·ÉÊ±µÖ´ï¡£
-reference=depart_arrival_period|#visitorname,rule-find-depart-arrival-period,?|È¥³ÌÏëÑ¡ÓÃÊ²Ã´Ê±¼ä¶ÎµÖ´ï£¿|#visitornameÒªÔÚ[]ÍùÈ¥·ÉÊ±µÖ´ï¡£=+ÔçÉÏ+Ôç³¿+ÉÏÎç+ÖĞÎç+ÏÂÎç+ÍíÉÏ+Ò¹Àï+Áè³¿
-reference=return_arrival_period|#visitorname,rule-find-return-arrival-period,?|»Ø³ÌÏëÑ¡ÓÃÊ²Ã´Ê±¼ä¶ÎµÖ´ï£¿|#visitornameÏëÔÚ[]Íù»Ø·ÉÊ±µÖ´ï¡£=+ÔçÉÏ+Ôç³¿+ÉÏÎç+ÖĞÎç+ÏÂÎç+ÍíÉÏ+Ò¹Àï+Áè³¿
-reference=depart_not_arrival_time:time|#visitorname,rule-find-depart-not-arrival-time,?|È¥³Ì²»ÏëÒªÊ²Ã´Ê±¼äµÖ´ï£¿|#visitorname²»ÒªÔÚ[]ÍùÈ¥·ÉÊ±µÖ´ï¡£
-reference=return_not_arrival_time:time|#visitorname,rule-find-return-not-arrival-time,?|»Ø³Ì²»ÏëÒªÊ²Ã´Ê±¼äµÖ´ï£¿|#visitorname²»ÒªÔÚ[]Íù»Ø·ÉÊ±µÖ´ï¡£
-reference=depart_not_arrival_period|#visitorname,rule-find-depart-not-arrival-period,?|È¥³Ì²»ÏëÑ¡ÓÃÊ²Ã´Ê±¼ä¶ÎµÖ´ï£¿|#visitorname²»ÒªÔÚ[]ÍùÈ¥·ÉÊ±µÖ´ï¡£=+ÔçÉÏ+Ôç³¿+ÉÏÎç+ÖĞÎç+ÏÂÎç+ÍíÉÏ+Ò¹Àï+Áè³¿
-reference=return_not_arrival_period|#visitorname,rule-find-return-not-arrival-period,?|»Ø³Ì²»ÏëÑ¡ÓÃÊ²Ã´Ê±¼ä¶ÎµÖ´ï£¿|#visitorname²»ÒªÔÚ[]Íù»Ø·ÉÊ±µÖ´ï¡£=+ÔçÉÏ+Ôç³¿+ÉÏÎç+ÖĞÎç+ÏÂÎç+ÍíÉÏ+Ò¹Àï+Áè³¿
-reference=price_ceiling:number|#visitorname,rule-find-priceceiling,?|»úÆ±µÄ×î¸ß¼Û¸ñÊÇ£¿|#visitornameÄÜ¹»½ÓÊÜ×î¸ß¼Û¸ñÊÇ[]Ôª¡£
-reference=has_price_ceiling|#visitorname,rule-find-haspriceceiling,?|»úÆ±µÄ×î¸ß¼Û¸ñÊÇ£¿|#visitornameÓĞ×î¸ß¼Û¸ñ¡£=+ÓĞ-Ã»~#visitornameÃ»ÓĞ×î¸ß¼Û¸ñ¡£=+Ã»ÓĞ
-reference=price_floor:number|#visitorname,rule-find-pricefloor,?|»úÆ±µÄ×îµÍ¼Û¸ñÊÇ£¿|#visitornameÄÜ¹»½ÓÊÜ×îµÍ¼Û¸ñÊÇ[]Ôª¡£
-reference=has_price_floor|#visitorname,rule-find-haspricefloor,?|»úÆ±µÄ×îµÍ¼Û¸ñÊÇ£¿|#visitornameÓĞ×îµÍ¼Û¸ñ¡£=+ÓĞ-Ã»~#visitornameÃ»ÓĞ×îµÍ¼Û¸ñ¡£=+Ã»ÓĞ
-reference=sort_by|#visitorname,rule-find-sortby,?|°´ÕÕÊ²Ã´Ë³ĞòÅÅÁĞ£¿|#visitornameÏëÒª°´ÕÕ[]À´ÅÅÁĞ¡£=+¼Û¸ñ+Ê±¼ä+×ÛºÏ
-reference=find_most|#visitorname,rule-find-find-most,?|ÒªÕÒÊ²Ã´ÑùµÄ£¿|#visitornameÒª×î[]¡£=+±ãÒË+¹ó+Êµ»İ+Ôç+Íí~#visitornameÒªÖ±·É¡£=+Ö±´ï+Ö±·É~#visitornameÒªÖĞ×ª¡£=+ÖĞ×ª
-reference=finish_order|#visitorname,rule-find-finish-order,?|È·¶¨¶©Æ±Âğ£¿|#visitornameÏëÒªÏÂ¶©µ¥¡£=-²»+ÏëÒª+Òª+ºÃ+ÊÇ+¶Ô+àÅ+¶©+ÏÂµ¥+Âò+¶¨+ok~#visitorname²»ÏëÒªÏÂ¶©µ¥¡£=+²»+²»Òª+²»Ïë+È¡Ïû~#visitornameÑ°ÕÒÆäËûº½°à¡£=+ÆäËû+±ğµÄ+±ğ+»»
-reference=change_depart_time_direction|#visitorname,rule-find-change-time-direction,?|ÒªÕÒ¸üÔçµÄ»¹ÊÇ¸üÍíµÄ£¿|#visitornameÒª¸ü[]µÄ¡£=+Ôç+Íí+Ç°+ºó+³Ù+ÌáÇ°+ÑÓÆÚ+Ôçµã+Ííµã+ÌáÔç+ÒÔºó
-reference=change_depart_time_by_day:number|#visitorname,rule-find-change-time-by-day,?|#visitornameÒª±ä¸ü[]Ìì¡£
-reference=change_depart_time_by_hour:number|#visitorname,rule-find-change-time-by-hour,?|#visitornameÒª±ä¸ü[]Ğ¡Ê±¡£
-reference=not_transfer|#visitorname,rule-find-not-transfer,?|²»ÒªÖĞ×ªµÄÆ±|#visitornameÒªÖ±·É=+ÖĞ×ª
-reference=not_direct|#visitorname,rule-find-not-direct,?|²»ÒªÖ±·ÉµÄÆ±|#visitornameÒªÖĞ×ª=+Ö±·É+Ö±´ï
-reference=choice_period|#visitorname,rule-find-choice-period,?|ÄãÏë¸ü¸ÄÊ±¼ä¶ÎÂğ£¿|#visitornameÏë°ÑÊ±¼ä¶Î¸ÄÎª[]¡£=++Ê±¼ä
-reference=choice_time:time|#visitorname,rule-find-choice-time,?|ÄãÏë¸ü¸ÄÊ±¼äÂğ£¿|#visitornameÏë°ÑÊ±¼ä¸ÄÎª[]¡£=++¿Û³ıÊ±¼ä
+condition=start:location|#visitorname,rule-find-start,?|æ‚¨æƒ³ä»å“ªä¸ªåŸå¸‚å‡ºå‘ï¼Ÿ|#visitornameæƒ³ä»[]å‡ºå‘ã€‚
+condition=destination:location|#visitorname,rule-find-destination,?|æ‚¨æƒ³é£åˆ°å“ªä¸ªåŸå¸‚ï¼Ÿ|#visitornameæƒ³é£åˆ°[]ã€‚
+condition=depart_time:time|#visitorname,rule-find-departtime,?|æ‚¨æƒ³ä»€ä¹ˆæ—¶å€™å‡ºå‘ï¼Ÿ|#visitornameæƒ³[]å‡ºå‘ã€‚
+reference=today|#visitorname,rule-same-day-return,?|è½¬æ¢|#visitornameè¦åŸºå‡†æ—¥è¿”å›ã€‚
+reference=return|#visitorname,rule-find-return,?|æ˜¯å¾€è¿”è¿˜æ˜¯å•ç¨‹ï¼Ÿ|#visitornameæƒ³è®¢[]çš„ç¥¨ã€‚=+å•ç¨‹+å¾€è¿”+æ¥å›+è¿”å›+è¿”ç¨‹+è¿”å›çš„+å›ç¨‹+å›æ¥
+reference=return_time:time|#visitorname,rule-find-returntime,?|æ‚¨æƒ³ä»€ä¹ˆæ—¶å€™è¿”å›ï¼Ÿ|#visitornameæƒ³[]è¿”å›ã€‚
+reference=cabinclass|#visitorname,rule-find-cabinclass,?|æ‚¨é€‰æ‹©ä»€ä¹ˆèˆ±ä½ï¼Ÿ|#visitornameæƒ³è¦[]ã€‚=++ä»“ä½
+reference=ticket_amount:number|#visitorname,rule-find-ticket-amount,?|æ‚¨è¦å‡ å¼ ç¥¨ï¼Ÿ|#visitornameæƒ³è¦[]å¼ ç¥¨ã€‚
+reference=companion|#visitorname,rule-find-companion,?|ä½ è¦å’Œåˆ«äººä¸€èµ·åŒè¡Œå—ï¼Ÿ|ä¸€å…±æœ‰1ä½æˆäººã€‚
+reference=couple|#visitorname,rule-find-couple,?|ä½ æ˜¯å¤«å¦»ä¸€èµ·èµ°å—ï¼Ÿ|ä¸€å…±æœ‰2ä½æˆäºº
+reference=adult_number:number|#visitorname,rule-find-adultnumber,?|ä¸€å…±æœ‰å‡ ä½æˆäººï¼Ÿ|ä¸€å…±æœ‰[]ä½æˆäººã€‚
+reference=has_adult|#visitorname,rule-find-hasadult,?|æ˜¯å¦æœ‰æˆäººï¼Ÿ|æœ‰æˆäººã€‚=+æœ‰-æ²¡~æ²¡æœ‰æˆäººã€‚=+æ²¡æœ‰
+reference=child_number:number|#visitorname,rule-find-childnumber,?|ä¸€å…±æœ‰å‡ ä½å„¿ç«¥ï¼Ÿ|ä¸€å…±æœ‰[]ä½å„¿ç«¥ã€‚
+reference=relative_companion|#visitorname,rule-find-relative-companion,?|éƒ½æœ‰å“ªäº›äº²æˆšåŒè¡Œï¼Ÿ|#visitornameå’Œ[]ä¸€èµ·åŒè¡Œã€‚=++äº²æˆšå
+reference=included_child_number:number|#visitorname,rule-find-included-child-number,?|å…¶ä¸­æœ‰å‡ ä½å„¿ç«¥ï¼Ÿ|å…¶ä¸­æœ‰[]ä½å„¿ç«¥ã€‚
+reference=has_child|#visitorname,rule-find-haschild,?|æ˜¯å¦æœ‰å„¿ç«¥ï¼Ÿ|æœ‰å„¿ç«¥ã€‚=+æœ‰-æ²¡~æ²¡æœ‰å„¿ç«¥ã€‚=+æ²¡æœ‰
+reference=infant_number:number|#visitorname,rule-find-infantnumber,?|ä¸€å…±æœ‰å‡ ä½å©´å„¿ï¼Ÿ|ä¸€å…±æœ‰[]ä½å©´å„¿ã€‚
+reference=in_seat_infant_number:number|#visitorname,rule-find-in-seat-infant-number,?|ä¸€å…±è¦å‡ ä¸ªå©´å„¿åº§ä½ï¼Ÿ|å©´å„¿åº§ä½è¦[]ä¸ªã€‚
+reference=included_infant_number:number|#visitorname,rule-find-included-infant-number,?|å…¶ä¸­æœ‰å‡ ä½å©´å„¿ï¼Ÿ|å…¶ä¸­æœ‰[]ä½å©´å„¿ã€‚
+reference=has_infant|#visitorname,rule-find-hasinfant,?|æ˜¯å¦æœ‰å©´å„¿ï¼Ÿ|æœ‰å©´å„¿ã€‚=+æœ‰-æ²¡~æ²¡æœ‰å©´å„¿ã€‚=+æ²¡æœ‰
+reference=check_bag_number:number|#visitorname,rule-find-checkbagnumber,?|ä¸€å…±æœ‰å‡ ä¸ªæ‰˜è¿è¡Œæï¼Ÿ|ä¸€å…±æœ‰[]ä¸ªæ‰˜è¿è¡Œæã€‚
+reference=has_check_bag|#visitorname,rule-find-hascheckbag,?|æ˜¯å¦æœ‰æ‰˜è¿è¡Œæï¼Ÿ|#visitornameæœ‰æ‰˜è¿è¡Œæã€‚=+æœ‰-æ²¡~#visitornameæ²¡æœ‰æ‰˜è¿è¡Œæã€‚=+æ²¡æœ‰
+reference=bag_total_weight:number|#visitorname,rule-find-bagtotalweight,?|æ‰˜è¿è¡Œæçš„æ€»é‡é‡æ˜¯å¤šå°‘ï¼Ÿ|æ‰˜è¿è¡Œæä¸€å…±[]å•ä½ã€‚
+reference=bag_weight_unit|#visitorname,rule-find-bagweightunit,?|æ‰˜è¿è¡Œæçš„é‡é‡æ˜¯ä»€ä¹ˆï¼Ÿ|é‡é‡å•ä½æ˜¯[]ã€‚=+ç£…+å…¬æ–¤+æ–¤+åƒå…‹+kg+KG+Kg+lb
+reference=bag_indi_weight:number|#visitorname,rule-find-bagindiweight,?|æ‰˜è¿è¡Œæçš„æœ€å¤§é‡é‡æ˜¯å¤šå°‘ï¼Ÿ|æ‰˜è¿è¡Œææœ€å¤§[]å•ä½ã€‚
+reference=cheap_flight|#visitorname,rule-find-cheapflight,?|æ˜¯å¦è¦å»‰ä»·èˆªç©ºï¼Ÿ|#visitornameæƒ³è¦å»‰ä»·èˆªç©ºã€‚=è¦+æƒ³è¦+å»‰ä»·èˆªç©º+å»‰èˆª-ä¸~#visitornameä¸æƒ³è¦å»‰ä»·èˆªç©ºã€‚=+ä¸è¦+ä¸æƒ³è¦+ä¸+ä¸é€‰+åˆ«é€‰+åˆ«ç»™+å¿½ç•¥
+reference=want_comp|#visitorname,rule-find-wantcomp,?|æƒ³é€‰ç”¨å“ªå®¶èˆªç©ºå…¬å¸ï¼Ÿ|#visitornameæƒ³é€‰ç”¨[]çš„æœºç¥¨ã€‚=++èˆªç©ºå…¬å¸
+reference=not_comp|#visitorname,rule-find-notcomp,?|ä¸æƒ³é€‰ç”¨å“ªå®¶èˆªç©ºå…¬å¸ï¼Ÿ|#visitornameä¸æƒ³é€‰ç”¨[]çš„æœºç¥¨ã€‚=++èˆªç©ºå…¬å¸~#visitornameè¦å…¶ä»–å…¬å¸ã€‚=+å…¶ä»–+åˆ«çš„+åˆ«+æ¢
+reference=want_plane|#visitorname,rule-find-wantplane,?|æƒ³é€‰ç”¨å“ªç§æœºå‹ï¼Ÿ|#visitornameæƒ³é€‰ç”¨[]ã€‚=++æœºå‹
+reference=not_plane|#visitorname,rule-find-notplane,?|ä¸æƒ³é€‰ç”¨å“ªç§æœºå‹ï¼Ÿ|#visitornameä¸æƒ³é€‰ç”¨[]ã€‚=++æœºå‹
+reference=depart_board_time:time|#visitorname,rule-find-depart-board-time,?|å»ç¨‹æƒ³é€‰ç”¨ä»€ä¹ˆç™»æœºæ—¶é—´ï¼Ÿ|#visitornameè¦åœ¨[]ç™»æœºå¾€å»é£ã€‚
+reference=return_board_time:time|#visitorname,rule-find-return-board-time,?|å›ç¨‹æƒ³é€‰ç”¨ä»€ä¹ˆç™»æœºæ—¶é—´ï¼Ÿ|#visitornameè¦åœ¨[]ä¸Šäº†é£æœºå¾€å›é£ã€‚
+reference=depart_board_period|#visitorname,rule-find-depart-board-period,?|å»ç¨‹æƒ³é€‰ç”¨ä»€ä¹ˆæ—¶é—´æ®µç™»æœºï¼Ÿ|#visitornameè¦åœ¨[]ç™»æœºå¾€å»é£ã€‚=+æ—©ä¸Š+æ—©æ™¨+ä¸Šåˆ+ä¸­åˆ+ä¸‹åˆ+æ™šä¸Š+å¤œé‡Œ+å‡Œæ™¨
+reference=return_board_period|#visitorname,rule-find-return-board-period,?|å›ç¨‹æƒ³é€‰ç”¨ä»€ä¹ˆæ—¶é—´æ®µç™»æœºï¼Ÿ|#visitornameè¦åœ¨[]ä¸Šäº†é£æœºå¾€å›é£ã€‚=+æ—©ä¸Š+æ—©æ™¨+ä¸Šåˆ+ä¸­åˆ+ä¸‹åˆ+æ™šä¸Š+å¤œé‡Œ+å‡Œæ™¨
+reference=depart_not_board_time:time|#visitorname,rule-find-depart-not-board-time,?|å»ç¨‹ä¸æƒ³é€‰ç”¨ä»€ä¹ˆç™»æœºæ—¶é—´ï¼Ÿ|#visitornameä¸è¦åœ¨[]ç™»æœºå¾€å»é£ã€‚
+reference=return_not_board_time:time|#visitorname,rule-find-return-not-board-time,?|å›ç¨‹ä¸æƒ³é€‰ç”¨ä»€ä¹ˆç™»æœºæ—¶é—´ï¼Ÿ|#visitornameä¸è¦åœ¨[]ç™»æœºå¾€å›é£ã€‚
+reference=depart_not_board_period|#visitorname,rule-find-depart-not-board-period,?|å»ç¨‹ä¸æƒ³é€‰ç”¨ä»€ä¹ˆæ—¶é—´æ®µç™»æœºï¼Ÿ|#visitornameä¸è¦åœ¨[]ç™»æœºå¾€å»é£ã€‚=+æ—©ä¸Š+æ—©æ™¨+ä¸Šåˆ+ä¸­åˆ+ä¸‹åˆ+æ™šä¸Š+å¤œé‡Œ+å‡Œæ™¨
+reference=return_not_board_period|#visitorname,rule-find-return-not-board-period,?|å›ç¨‹ä¸æƒ³é€‰ç”¨ä»€ä¹ˆæ—¶é—´æ®µç™»æœºï¼Ÿ|#visitornameä¸è¦åœ¨[]ç™»æœºå¾€å›é£ã€‚=+æ—©ä¸Š+æ—©æ™¨+ä¸Šåˆ+ä¸­åˆ+ä¸‹åˆ+æ™šä¸Š+å¤œé‡Œ+å‡Œæ™¨
+reference=depart_arrival_time:time|#visitorname,rule-find-depart-arrival-time,?|å»ç¨‹æƒ³è¦ä»€ä¹ˆæ—¶é—´æŠµè¾¾ï¼Ÿ|#visitornameè¦åœ¨[]å¾€å»é£æ—¶æŠµè¾¾ã€‚
+reference=return_arrival_time:time|#visitorname,rule-find-return-arrival-time,?|å›ç¨‹æƒ³è¦ä»€ä¹ˆæ—¶é—´æŠµè¾¾ï¼Ÿ|#visitornameæƒ³åœ¨[]å¾€å›é£æ—¶æŠµè¾¾ã€‚
+reference=depart_arrival_period|#visitorname,rule-find-depart-arrival-period,?|å»ç¨‹æƒ³é€‰ç”¨ä»€ä¹ˆæ—¶é—´æ®µæŠµè¾¾ï¼Ÿ|#visitornameè¦åœ¨[]å¾€å»é£æ—¶æŠµè¾¾ã€‚=+æ—©ä¸Š+æ—©æ™¨+ä¸Šåˆ+ä¸­åˆ+ä¸‹åˆ+æ™šä¸Š+å¤œé‡Œ+å‡Œæ™¨
+reference=return_arrival_period|#visitorname,rule-find-return-arrival-period,?|å›ç¨‹æƒ³é€‰ç”¨ä»€ä¹ˆæ—¶é—´æ®µæŠµè¾¾ï¼Ÿ|#visitornameæƒ³åœ¨[]å¾€å›é£æ—¶æŠµè¾¾ã€‚=+æ—©ä¸Š+æ—©æ™¨+ä¸Šåˆ+ä¸­åˆ+ä¸‹åˆ+æ™šä¸Š+å¤œé‡Œ+å‡Œæ™¨
+reference=depart_not_arrival_time:time|#visitorname,rule-find-depart-not-arrival-time,?|å»ç¨‹ä¸æƒ³è¦ä»€ä¹ˆæ—¶é—´æŠµè¾¾ï¼Ÿ|#visitornameä¸è¦åœ¨[]å¾€å»é£æ—¶æŠµè¾¾ã€‚
+reference=return_not_arrival_time:time|#visitorname,rule-find-return-not-arrival-time,?|å›ç¨‹ä¸æƒ³è¦ä»€ä¹ˆæ—¶é—´æŠµè¾¾ï¼Ÿ|#visitornameä¸è¦åœ¨[]å¾€å›é£æ—¶æŠµè¾¾ã€‚
+reference=depart_not_arrival_period|#visitorname,rule-find-depart-not-arrival-period,?|å»ç¨‹ä¸æƒ³é€‰ç”¨ä»€ä¹ˆæ—¶é—´æ®µæŠµè¾¾ï¼Ÿ|#visitornameä¸è¦åœ¨[]å¾€å»é£æ—¶æŠµè¾¾ã€‚=+æ—©ä¸Š+æ—©æ™¨+ä¸Šåˆ+ä¸­åˆ+ä¸‹åˆ+æ™šä¸Š+å¤œé‡Œ+å‡Œæ™¨
+reference=return_not_arrival_period|#visitorname,rule-find-return-not-arrival-period,?|å›ç¨‹ä¸æƒ³é€‰ç”¨ä»€ä¹ˆæ—¶é—´æ®µæŠµè¾¾ï¼Ÿ|#visitornameä¸è¦åœ¨[]å¾€å›é£æ—¶æŠµè¾¾ã€‚=+æ—©ä¸Š+æ—©æ™¨+ä¸Šåˆ+ä¸­åˆ+ä¸‹åˆ+æ™šä¸Š+å¤œé‡Œ+å‡Œæ™¨
+reference=price_ceiling:number|#visitorname,rule-find-priceceiling,?|æœºç¥¨çš„æœ€é«˜ä»·æ ¼æ˜¯ï¼Ÿ|#visitornameèƒ½å¤Ÿæ¥å—æœ€é«˜ä»·æ ¼æ˜¯[]å…ƒã€‚
+reference=has_price_ceiling|#visitorname,rule-find-haspriceceiling,?|æœºç¥¨çš„æœ€é«˜ä»·æ ¼æ˜¯ï¼Ÿ|#visitornameæœ‰æœ€é«˜ä»·æ ¼ã€‚=+æœ‰-æ²¡~#visitornameæ²¡æœ‰æœ€é«˜ä»·æ ¼ã€‚=+æ²¡æœ‰
+reference=price_floor:number|#visitorname,rule-find-pricefloor,?|æœºç¥¨çš„æœ€ä½ä»·æ ¼æ˜¯ï¼Ÿ|#visitornameèƒ½å¤Ÿæ¥å—æœ€ä½ä»·æ ¼æ˜¯[]å…ƒã€‚
+reference=has_price_floor|#visitorname,rule-find-haspricefloor,?|æœºç¥¨çš„æœ€ä½ä»·æ ¼æ˜¯ï¼Ÿ|#visitornameæœ‰æœ€ä½ä»·æ ¼ã€‚=+æœ‰-æ²¡~#visitornameæ²¡æœ‰æœ€ä½ä»·æ ¼ã€‚=+æ²¡æœ‰
+reference=sort_by|#visitorname,rule-find-sortby,?|æŒ‰ç…§ä»€ä¹ˆé¡ºåºæ’åˆ—ï¼Ÿ|#visitornameæƒ³è¦æŒ‰ç…§[]æ¥æ’åˆ—ã€‚=+ä»·æ ¼+æ—¶é—´+ç»¼åˆ
+reference=find_most|#visitorname,rule-find-find-most,?|è¦æ‰¾ä»€ä¹ˆæ ·çš„ï¼Ÿ|#visitornameè¦æœ€[]ã€‚=+ä¾¿å®œ+è´µ+å®æƒ +æ—©+æ™š~#visitornameè¦ç›´é£ã€‚=+ç›´è¾¾+ç›´é£~#visitornameè¦ä¸­è½¬ã€‚=+ä¸­è½¬
+reference=finish_order|#visitorname,rule-find-finish-order,?|ç¡®å®šè®¢ç¥¨å—ï¼Ÿ|#visitornameæƒ³è¦ä¸‹è®¢å•ã€‚=-ä¸+æƒ³è¦+è¦+å¥½+æ˜¯+å¯¹+å—¯+è®¢+ä¸‹å•+ä¹°+å®š+ok+å¯ä»¥+å°±è¿™å¼ +ä¸‹å§~#visitornameä¸æƒ³è¦ä¸‹è®¢å•ã€‚=+ä¸+ä¸è¦+ä¸æƒ³+å–æ¶ˆ
+reference=change_depart_time_direction|#visitorname,rule-find-change-time-direction,?|è¦æ‰¾æ›´æ—©çš„è¿˜æ˜¯æ›´æ™šçš„ï¼Ÿ|#visitornameè¦æ›´[]çš„ã€‚=+æ—©+æ™š+å‰+å+è¿Ÿ+æå‰+å»¶æœŸ+æ—©ç‚¹+æ™šç‚¹+ææ—©+ä»¥å
+reference=change_depart_time_by_day:number|#visitorname,rule-find-change-time-by-day,?|#visitornameè¦å˜æ›´[]å¤©ã€‚
+reference=change_depart_time_by_hour:number|#visitorname,rule-find-change-time-by-hour,?|#visitornameè¦å˜æ›´[]å°æ—¶ã€‚
+reference=not_transfer|#visitorname,rule-find-not-transfer,?|ä¸è¦ä¸­è½¬çš„ç¥¨|#visitornameè¦ç›´é£=+ä¸­è½¬
+reference=not_direct|#visitorname,rule-find-not-direct,?|ä¸è¦ç›´é£çš„ç¥¨|#visitornameè¦ä¸­è½¬=+ç›´é£+ç›´è¾¾
+reference=find_reverse|#visitorname,rule-find-reverse,?|ä¸è¦æ‰¾ä»€ä¹ˆæ ·çš„?|#visitornameæƒ³é€‰æ‹©[]åå‘çš„ã€‚=+ä¾¿å®œ+è´µ+æ—©+æ™š+å¥½è´µ+è¿Ÿ
+reference=change_flight|#visitorname,rule-find-change-flight,?|æ¢èˆªç­|#visitornameå¯»æ‰¾å…¶ä»–èˆªç­ã€‚=+å…¶ä»–+åˆ«çš„+åˆ«+æ¢
 process=nextStep=start|ask_start_loc=clear_active|
 process=nextStep=destination|ask_destination_loc=clear_active|
 process=nextStep=return|ask_round_trip=clear_active|
@@ -118,75 +118,78 @@ process=nextStep=finish_order|ask_finish_order=clear_active|
 process=nextStep=change_depart_time_direction|ask_change_depart_time_direction=clear_active|
 process=nextStep=change_depart_time_by_day|ask_change_depart_time_by_day=clear_active|
 process=nextStep=change_depart_time_by_hour|ask_change_depart_time_by_hour=clear_active|
-process=nextStep=choice_period|ask_choice_period=clear_active|
-process=nextStep=choice_time|ask_choice_period=clear_active|
+process=nextStep=find_reverse|ask_find_reverse=clear_active|
+process=nextStep=change_flight|ask_change_flight=clear_active|
+process=completed=true|select_by_additional_httppost=clear|
 
 name=select_by_additional_httppost
 status=waiting
 action=select
-reference=makeorder:number|#visitorname,rule-find-order,?|ÄúÏëÑ¡ÔñµÚ¼¸¸ö£¿|#visitornameÏëÑ¡ÔñµÚ[]¸ö¡£
-reference=start:location|#visitorname,rule-find-start,?|ÄúÏë´ÓÄÄ¸ö³ÇÊĞ³ö·¢£¿|#visitornameÏë´Ó[]³ö·¢¡£
-reference=destination:location|#visitorname,rule-find-destination,?|ÄúÏë·Éµ½ÄÄ¸ö³ÇÊĞ£¿|#visitornameÏë·Éµ½[]¡£
-reference=depart_time:time|#visitorname,rule-find-departtime,?|ÄúÏëÊ²Ã´Ê±ºò³ö·¢£¿|#visitornameÏë[]³ö·¢¡£
-reference=today|#visitorname,rule-same-day-return,?|×ª»»|#visitornameÒª»ù×¼ÈÕ·µ»Ø¡£
-reference=depart_day_calc:number|#visitorname,rule-find-depart-day-calc,?|ÄúÏë¼¸Ììºó³ö·¢£¿|#visitornameÏë[]Ììºó³ö·¢¡£
-reference=return|#visitorname,rule-find-return,?|ÊÇÍù·µ»¹ÊÇµ¥³Ì£¿|#visitornameÏë¶©[]µÄÆ±¡£=+µ¥³Ì+Íù·µ+À´»Ø+·µ»Ø+·µ³Ì+·µ»ØµÄ
-reference=return_time:time|#visitorname,rule-find-returntime,?|ÄúÏëÊ²Ã´Ê±ºò·µ»Ø£¿|#visitornameÏë[]·µ»Ø¡£
-reference=return_day_calc:number|#visitorname,rule-find-return-day-calc,?|ÄúÏë¼¸Ììºó·µ»Ø£¿|#visitornameÏë[]Ììºó·µ»Ø¡£
-reference=cabinclass|#visitorname,rule-find-cabinclass,?|ÄúÑ¡ÔñÊ²Ã´²ÕÎ»£¿|#visitornameÏëÒª[]¡£=++²ÖÎ»
-reference=ticket_amount:number|#visitorname,rule-find-ticket-amount,?|ÄúÒª¼¸ÕÅÆ±£¿|#visitornameÏëÒª[]ÕÅÆ±¡£
-reference=companion|#visitorname,rule-find-companion,?|ÄãÒªºÍ±ğÈËÒ»ÆğÍ¬ĞĞÂğ£¿|Ò»¹²ÓĞ1Î»³ÉÈË¡£
-reference=couple|#visitorname,rule-find-couple,?|ÄãÊÇ·òÆŞÒ»Æğ×ßÂğ£¿|Ò»¹²ÓĞ2Î»³ÉÈË
-reference=adult_number:number|#visitorname,rule-find-adultnumber,?|Ò»¹²ÓĞ¼¸Î»³ÉÈË£¿|Ò»¹²ÓĞ[]Î»³ÉÈË¡£
-reference=has_adult|#visitorname,rule-find-hasadult,?|ÊÇ·ñÓĞ³ÉÈË£¿|ÓĞ³ÉÈË¡£=+ÓĞ-Ã»~Ã»ÓĞ³ÉÈË¡£=+Ã»ÓĞ
-reference=child_number:number|#visitorname,rule-find-childnumber,?|Ò»¹²ÓĞ¼¸Î»¶ùÍ¯£¿|Ò»¹²ÓĞ[]Î»¶ùÍ¯¡£
-reference=relative_companion|#visitorname,rule-find-relative-companion,?|¶¼ÓĞÄÄĞ©Ç×ÆİÍ¬ĞĞ£¿|#visitornameºÍ[]Ò»ÆğÍ¬ĞĞ¡£=++Ç×ÆİÃû
-reference=included_child_number:number|#visitorname,rule-find-included-child-number,?|ÆäÖĞÓĞ¼¸Î»¶ùÍ¯£¿|ÆäÖĞÓĞ[]Î»¶ùÍ¯¡£
-reference=has_child|#visitorname,rule-find-haschild,?|ÊÇ·ñÓĞ¶ùÍ¯£¿|ÓĞ¶ùÍ¯¡£=+ÓĞ-Ã»~Ã»ÓĞ¶ùÍ¯¡£=+Ã»ÓĞ
-reference=infant_number:number|#visitorname,rule-find-infantnumber,?|Ò»¹²ÓĞ¼¸Î»Ó¤¶ù£¿|Ò»¹²ÓĞ[]Î»Ó¤¶ù¡£
-reference=in_seat_infant_number:number|#visitorname,rule-find-in-seat-infant-number,?|Ò»¹²Òª¼¸¸öÓ¤¶ù×ùÎ»£¿|Ó¤¶ù×ùÎ»Òª[]¸ö¡£
-reference=included_infant_number:number|#visitorname,rule-find-included-infant-number,?|ÆäÖĞÓĞ¼¸Î»Ó¤¶ù£¿|ÆäÖĞÓĞ[]Î»Ó¤¶ù¡£
-reference=has_infant|#visitorname,rule-find-hasinfant,?|ÊÇ·ñÓĞÓ¤¶ù£¿|ÓĞÓ¤¶ù¡£=+ÓĞ-Ã»~Ã»ÓĞÓ¤¶ù¡£=+Ã»ÓĞ
-reference=check_bag_number:number|#visitorname,rule-find-checkbagnumber,?|Ò»¹²ÓĞ¼¸¸öÍĞÔËĞĞÀî£¿|Ò»¹²ÓĞ[]¸öÍĞÔËĞĞÀî¡£
-reference=has_check_bag|#visitorname,rule-find-hascheckbag,?|ÊÇ·ñÓĞÍĞÔËĞĞÀî£¿|#visitornameÓĞÍĞÔËĞĞÀî¡£=+ÓĞ-Ã»~#visitornameÃ»ÓĞÍĞÔËĞĞÀî¡£=+Ã»ÓĞ
-reference=bag_total_weight:number|#visitorname,rule-find-bagtotalweight,?|ÍĞÔËĞĞÀîµÄ×ÜÖØÁ¿ÊÇ¶àÉÙ£¿|ÍĞÔËĞĞÀîÒ»¹²[]µ¥Î»¡£
-reference=bag_weight_unit|#visitorname,rule-find-bagweightunit,?|ÍĞÔËĞĞÀîµÄÖØÁ¿ÊÇÊ²Ã´£¿|ÖØÁ¿µ¥Î»ÊÇ[]¡£=+°õ+¹«½ï+½ï+Ç§¿Ë+kg+KG+Kg+lb
-reference=bag_indi_weight:number|#visitorname,rule-find-bagindiweight,?|ÍĞÔËĞĞÀîµÄ×î´óÖØÁ¿ÊÇ¶àÉÙ£¿|ÍĞÔËĞĞÀî×î´ó[]µ¥Î»¡£
-reference=cheap_flight|#visitorname,rule-find-cheapflight,?|ÊÇ·ñÒªÁ®¼Ûº½¿Õ£¿|#visitornameÏëÒªÁ®¼Ûº½¿Õ¡£=Òª+ÏëÒª+Á®¼Ûº½¿Õ+Á®º½-²»~#visitorname²»ÏëÒªÁ®¼Ûº½¿Õ¡£=+²»Òª+²»ÏëÒª+²»+²»Ñ¡+±ğÑ¡+±ğ¸ø+ºöÂÔ
-reference=want_comp|#visitorname,rule-find-wantcomp,?|ÏëÑ¡ÓÃÄÄ¼Òº½¿Õ¹«Ë¾£¿|#visitornameÏëÑ¡ÓÃ[]µÄ»úÆ±¡£=++º½¿Õ¹«Ë¾
-reference=not_comp|#visitorname,rule-find-notcomp,?|²»ÏëÑ¡ÓÃÄÄ¼Òº½¿Õ¹«Ë¾£¿|#visitorname²»ÏëÑ¡ÓÃ[]µÄ»úÆ±¡£=++º½¿Õ¹«Ë¾~#visitornameÒªÆäËû¹«Ë¾¡£=+ÆäËû+±ğµÄ+±ğ+»»
-reference=want_plane|#visitorname,rule-find-wantplane,?|ÏëÑ¡ÓÃÄÄÖÖ»úĞÍ£¿|#visitornameÏëÑ¡ÓÃ[]¡£=++»úĞÍ
-reference=not_plane|#visitorname,rule-find-notplane,?|²»ÏëÑ¡ÓÃÄÄÖÖ»úĞÍ£¿|#visitorname²»ÏëÑ¡ÓÃ[]¡£=++»úĞÍ
-reference=depart_board_time:time|#visitorname,rule-find-depart-board-time,?|È¥³ÌÏëÑ¡ÓÃÊ²Ã´µÇ»úÊ±¼ä£¿|#visitornameÒªÔÚ[]µÇ»úÍùÈ¥·É¡£
-reference=return_board_time:time|#visitorname,rule-find-return-board-time,?|»Ø³ÌÏëÑ¡ÓÃÊ²Ã´µÇ»úÊ±¼ä£¿|#visitornameÒªÔÚ[]ÉÏÁË·É»úÍù»Ø·É¡£
-reference=depart_board_period|#visitorname,rule-find-depart-board-period,?|È¥³ÌÏëÑ¡ÓÃÊ²Ã´Ê±¼ä¶ÎµÇ»ú£¿|#visitornameÒªÔÚ[]µÇ»úÍùÈ¥·É¡£=+ÔçÉÏ+Ôç³¿+ÉÏÎç+ÖĞÎç+ÏÂÎç+ÍíÉÏ+Ò¹Àï+Áè³¿
-reference=return_board_period|#visitorname,rule-find-return-board-period,?|»Ø³ÌÏëÑ¡ÓÃÊ²Ã´Ê±¼ä¶ÎµÇ»ú£¿|#visitornameÒªÔÚ[]ÉÏÁË·É»úÍù»Ø·É¡£=+ÔçÉÏ+Ôç³¿+ÉÏÎç+ÖĞÎç+ÏÂÎç+ÍíÉÏ+Ò¹Àï+Áè³¿
-reference=depart_not_board_time:time|#visitorname,rule-find-depart-not-board-time,?|È¥³Ì²»ÏëÑ¡ÓÃÊ²Ã´µÇ»úÊ±¼ä£¿|#visitorname²»ÒªÔÚ[]µÇ»úÍùÈ¥·É¡£
-reference=return_not_board_time:time|#visitorname,rule-find-return-not-board-time,?|»Ø³Ì²»ÏëÑ¡ÓÃÊ²Ã´µÇ»úÊ±¼ä£¿|#visitorname²»ÒªÔÚ[]µÇ»úÍù»Ø·É¡£
-reference=depart_not_board_period|#visitorname,rule-find-depart-not-board-period,?|È¥³Ì²»ÏëÑ¡ÓÃÊ²Ã´Ê±¼ä¶ÎµÇ»ú£¿|#visitorname²»ÒªÔÚ[]µÇ»úÍùÈ¥·É¡£=+ÔçÉÏ+Ôç³¿+ÉÏÎç+ÖĞÎç+ÏÂÎç+ÍíÉÏ+Ò¹Àï+Áè³¿
-reference=return_not_board_period|#visitorname,rule-find-return-not-board-period,?|»Ø³Ì²»ÏëÑ¡ÓÃÊ²Ã´Ê±¼ä¶ÎµÇ»ú£¿|#visitorname²»ÒªÔÚ[]µÇ»úÍù»Ø·É¡£=+ÔçÉÏ+Ôç³¿+ÉÏÎç+ÖĞÎç+ÏÂÎç+ÍíÉÏ+Ò¹Àï+Áè³¿
-reference=depart_arrival_time:time|#visitorname,rule-find-depart-arrival-time,?|È¥³ÌÏëÒªÊ²Ã´Ê±¼äµÖ´ï£¿|#visitornameÒªÔÚ[]ÍùÈ¥·ÉÊ±µÖ´ï¡£
-reference=return_arrival_time:time|#visitorname,rule-find-return-arrival-time,?|»Ø³ÌÏëÑ¡ÓÃÊ²Ã´Ê±¼äµÖ´ï£¿|#visitornameÏëÔÚ[]Íù»Ø·ÉÊ±µÖ´ï¡£
-reference=depart_arrival_period|#visitorname,rule-find-depart-arrival-period,?|È¥³ÌÏëÑ¡ÓÃÊ²Ã´Ê±¼ä¶ÎµÖ´ï£¿|#visitornameÒªÔÚ[]ÍùÈ¥·ÉÊ±µÖ´ï¡£=+ÔçÉÏ+Ôç³¿+ÉÏÎç+ÖĞÎç+ÏÂÎç+ÍíÉÏ+Ò¹Àï+Áè³¿
-reference=return_arrival_period|#visitorname,rule-find-return-arrival-period,?|»Ø³ÌÏëÑ¡ÓÃÊ²Ã´Ê±¼ä¶ÎµÖ´ï£¿|#visitornameÏëÔÚ[]Íù»Ø·ÉÊ±µÖ´ï¡£=+ÔçÉÏ+Ôç³¿+ÉÏÎç+ÖĞÎç+ÏÂÎç+ÍíÉÏ+Ò¹Àï+Áè³¿
-reference=depart_not_arrival_time:time|#visitorname,rule-find-depart-not-arrival-time,?|È¥³Ì²»ÏëÒªÊ²Ã´Ê±¼äµÖ´ï£¿|#visitorname²»ÒªÔÚ[]ÍùÈ¥·ÉÊ±µÖ´ï¡£
-reference=return_not_arrival_time:time|#visitorname,rule-find-return-not-arrival-time,?|»Ø³Ì²»ÏëÑ¡ÓÃÊ²Ã´Ê±¼äµÖ´ï£¿|#visitorname²»ÒªÔÚ[]Íù»Ø·ÉÊ±µÖ´ï¡£
-reference=depart_not_arrival_period|#visitorname,rule-find-depart-not-arrival-period,?|È¥³Ì²»ÏëÑ¡ÓÃÊ²Ã´Ê±¼ä¶ÎµÖ´ï£¿|#visitorname²»ÒªÔÚ[]ÍùÈ¥·ÉÊ±µÖ´ï¡£=+ÔçÉÏ+Ôç³¿+ÉÏÎç+ÖĞÎç+ÏÂÎç+ÍíÉÏ+Ò¹Àï+Áè³¿
-reference=return_not_arrival_period|#visitorname,rule-find-return-not-arrival-period,?|»Ø³Ì²»ÏëÑ¡ÓÃÊ²Ã´Ê±¼ä¶ÎµÖ´ï£¿|#visitorname²»ÒªÔÚ[]Íù»Ø·ÉÊ±µÖ´ï¡£=+ÔçÉÏ+Ôç³¿+ÉÏÎç+ÖĞÎç+ÏÂÎç+ÍíÉÏ+Ò¹Àï+Áè³¿
-reference=price_ceiling:number|#visitorname,rule-find-priceceiling,?|»úÆ±µÄ×î¸ß¼Û¸ñÊÇ£¿|#visitornameÄÜ¹»½ÓÊÜ×î¸ß¼Û¸ñÊÇ[]Ôª¡£
-reference=has_price_ceiling|#visitorname,rule-find-haspriceceiling,?|»úÆ±µÄ×î¸ß¼Û¸ñÊÇ£¿|#visitornameÓĞ×î¸ß¼Û¸ñ¡£=+ÓĞ-Ã»~#visitornameÃ»ÓĞ×î¸ß¼Û¸ñ¡£=+Ã»ÓĞ
-reference=price_floor:number|#visitorname,rule-find-pricefloor,?|»úÆ±µÄ×îµÍ¼Û¸ñÊÇ£¿|#visitornameÄÜ¹»½ÓÊÜ×îµÍ¼Û¸ñÊÇ[]Ôª¡£
-reference=has_price_floor|#visitorname,rule-find-haspricefloor,?|»úÆ±µÄ×îµÍ¼Û¸ñÊÇ£¿|#visitornameÓĞ×îµÍ¼Û¸ñ¡£=+ÓĞ-Ã»~#visitornameÃ»ÓĞ×îµÍ¼Û¸ñ¡£=+Ã»ÓĞ
-reference=sort_by|#visitorname,rule-find-sortby,?|°´ÕÕÊ²Ã´Ë³ĞòÅÅÁĞ£¿|#visitornameÏëÒª°´ÕÕ[]À´ÅÅÁĞ¡£=+¼Û¸ñ+Ê±¼ä+×ÛºÏ
-reference=find_most|#visitorname,rule-find-find-most,?|ÒªÕÒÊ²Ã´ÑùµÄ£¿|#visitornameÒª×î[]¡£=+±ãÒË+¹ó+Êµ»İ+Ôç+Íí~#visitornameÒªÖ±·É¡£=+Ö±´ï+Ö±·É~#visitornameÒªÖĞ×ª¡£=+ÖĞ×ª
-reference=finish_order|#visitorname,rule-find-finish-order,?|È·¶¨¶©Æ±Âğ£¿|#visitornameÏëÒªÏÂ¶©µ¥¡£=+ÏëÒª+Òª+ºÃ+ÊÇ+¶Ô+¶©+ÏÂµ¥-²»+Âò+OK+àÅ+¶¨~#visitorname²»ÏëÒªÏÂ¶©µ¥¡£=+²»+²»Òª+²»Ïë+È¡Ïû~#visitornameÑ°ÕÒÆäËûº½°à¡£=+ÆäËû+±ğµÄ+±ğ+»»
-reference=change_depart_time_direction|#visitorname,rule-find-change-time-direction,?|ÒªÕÒ¸üÔçµÄ»¹ÊÇ¸üÍíµÄ£¿|#visitornameÒª¸ü[]µÄ¡£=+Ôç+Íí+Ç°+ºó+³Ù+ÌáÇ°+ÑÓÆÚ+Ôçµã+Ííµã+ÌáÔç+ÒÔºó
-reference=change_depart_time_by_day:number|#visitorname,rule-find-change-time-by-day,?|#visitornameÒª±ä¸ü[]Ìì¡£
-reference=change_depart_time_by_hour:number|#visitorname,rule-find-change-time-by-hour,?|#visitornameÒª±ä¸ü[]Ğ¡Ê±¡£
-reference=not_transfer|#visitorname,rule-find-not-transfer,?|²»ÒªÖĞ×ªµÄÆ±|#visitornameÒªÖ±·É=+ÖĞ×ª
-reference=not_direct|#visitorname,rule-find-not-direct,?|²»ÒªÖ±·ÉµÄÆ±|#visitornameÒªÖĞ×ª=+Ö±·É+Ö±´ï
-reference=choice_period|#visitorname,rule-find-choice-period,?|ÄãÏë¸ü¸ÄÊ±¼ä¶ÎÂğ£¿|#visitornameÏë°ÑÊ±¼ä¶Î¸ÄÎª[]¡£=++Ê±¼ä
-reference=choice_time:time|#visitorname,rule-find-choice-time,?|ÄãÏë¸ü¸ÄÊ±¼äÂğ£¿|#visitornameÏë°ÑÊ±¼ä¸ÄÎª[]¡£=++¿Û³ıÊ±¼ä
+reference=makeorder:number|#visitorname,rule-find-order,?|æ‚¨æƒ³é€‰æ‹©ç¬¬å‡ ä¸ªï¼Ÿ|#visitornameæƒ³é€‰æ‹©ç¬¬[]ä¸ªã€‚
+reference=start:location|#visitorname,rule-find-start,?|æ‚¨æƒ³ä»å“ªä¸ªåŸå¸‚å‡ºå‘ï¼Ÿ|#visitornameæƒ³ä»[]å‡ºå‘ã€‚
+reference=destination:location|#visitorname,rule-find-destination,?|æ‚¨æƒ³é£åˆ°å“ªä¸ªåŸå¸‚ï¼Ÿ|#visitornameæƒ³é£åˆ°[]ã€‚
+reference=depart_time:time|#visitorname,rule-find-departtime,?|æ‚¨æƒ³ä»€ä¹ˆæ—¶å€™å‡ºå‘ï¼Ÿ|#visitornameæƒ³[]å‡ºå‘ã€‚
+reference=today|#visitorname,rule-same-day-return,?|è½¬æ¢|#visitornameè¦åŸºå‡†æ—¥è¿”å›ã€‚
+reference=depart_day_calc:number|#visitorname,rule-find-depart-day-calc,?|æ‚¨æƒ³å‡ å¤©åå‡ºå‘ï¼Ÿ|#visitornameæƒ³[]å¤©åå‡ºå‘ã€‚
+reference=return|#visitorname,rule-find-return,?|æ˜¯å¾€è¿”è¿˜æ˜¯å•ç¨‹ï¼Ÿ|#visitornameæƒ³è®¢[]çš„ç¥¨ã€‚=+å•ç¨‹+å¾€è¿”+æ¥å›+è¿”å›+è¿”ç¨‹+è¿”å›çš„+å›ç¨‹+å›æ¥
+reference=return_time:time|#visitorname,rule-find-returntime,?|æ‚¨æƒ³ä»€ä¹ˆæ—¶å€™è¿”å›ï¼Ÿ|#visitornameæƒ³[]è¿”å›ã€‚
+reference=return_day_calc:number|#visitorname,rule-find-return-day-calc,?|æ‚¨æƒ³å‡ å¤©åè¿”å›ï¼Ÿ|#visitornameæƒ³[]å¤©åè¿”å›ã€‚
+reference=cabinclass|#visitorname,rule-find-cabinclass,?|æ‚¨é€‰æ‹©ä»€ä¹ˆèˆ±ä½ï¼Ÿ|#visitornameæƒ³è¦[]ã€‚=++ä»“ä½
+reference=ticket_amount:number|#visitorname,rule-find-ticket-amount,?|æ‚¨è¦å‡ å¼ ç¥¨ï¼Ÿ|#visitornameæƒ³è¦[]å¼ ç¥¨ã€‚
+reference=companion|#visitorname,rule-find-companion,?|ä½ è¦å’Œåˆ«äººä¸€èµ·åŒè¡Œå—ï¼Ÿ|ä¸€å…±æœ‰1ä½æˆäººã€‚
+reference=couple|#visitorname,rule-find-couple,?|ä½ æ˜¯å¤«å¦»ä¸€èµ·èµ°å—ï¼Ÿ|ä¸€å…±æœ‰2ä½æˆäºº
+reference=adult_number:number|#visitorname,rule-find-adultnumber,?|ä¸€å…±æœ‰å‡ ä½æˆäººï¼Ÿ|ä¸€å…±æœ‰[]ä½æˆäººã€‚
+reference=has_adult|#visitorname,rule-find-hasadult,?|æ˜¯å¦æœ‰æˆäººï¼Ÿ|æœ‰æˆäººã€‚=+æœ‰-æ²¡~æ²¡æœ‰æˆäººã€‚=+æ²¡æœ‰
+reference=child_number:number|#visitorname,rule-find-childnumber,?|ä¸€å…±æœ‰å‡ ä½å„¿ç«¥ï¼Ÿ|ä¸€å…±æœ‰[]ä½å„¿ç«¥ã€‚
+reference=relative_companion|#visitorname,rule-find-relative-companion,?|éƒ½æœ‰å“ªäº›äº²æˆšåŒè¡Œï¼Ÿ|#visitornameå’Œ[]ä¸€èµ·åŒè¡Œã€‚=++äº²æˆšå
+reference=included_child_number:number|#visitorname,rule-find-included-child-number,?|å…¶ä¸­æœ‰å‡ ä½å„¿ç«¥ï¼Ÿ|å…¶ä¸­æœ‰[]ä½å„¿ç«¥ã€‚
+reference=has_child|#visitorname,rule-find-haschild,?|æ˜¯å¦æœ‰å„¿ç«¥ï¼Ÿ|æœ‰å„¿ç«¥ã€‚=+æœ‰-æ²¡~æ²¡æœ‰å„¿ç«¥ã€‚=+æ²¡æœ‰
+reference=infant_number:number|#visitorname,rule-find-infantnumber,?|ä¸€å…±æœ‰å‡ ä½å©´å„¿ï¼Ÿ|ä¸€å…±æœ‰[]ä½å©´å„¿ã€‚
+reference=in_seat_infant_number:number|#visitorname,rule-find-in-seat-infant-number,?|ä¸€å…±è¦å‡ ä¸ªå©´å„¿åº§ä½ï¼Ÿ|å©´å„¿åº§ä½è¦[]ä¸ªã€‚
+reference=included_infant_number:number|#visitorname,rule-find-included-infant-number,?|å…¶ä¸­æœ‰å‡ ä½å©´å„¿ï¼Ÿ|å…¶ä¸­æœ‰[]ä½å©´å„¿ã€‚
+reference=has_infant|#visitorname,rule-find-hasinfant,?|æ˜¯å¦æœ‰å©´å„¿ï¼Ÿ|æœ‰å©´å„¿ã€‚=+æœ‰-æ²¡~æ²¡æœ‰å©´å„¿ã€‚=+æ²¡æœ‰
+reference=check_bag_number:number|#visitorname,rule-find-checkbagnumber,?|ä¸€å…±æœ‰å‡ ä¸ªæ‰˜è¿è¡Œæï¼Ÿ|ä¸€å…±æœ‰[]ä¸ªæ‰˜è¿è¡Œæã€‚
+reference=has_check_bag|#visitorname,rule-find-hascheckbag,?|æ˜¯å¦æœ‰æ‰˜è¿è¡Œæï¼Ÿ|#visitornameæœ‰æ‰˜è¿è¡Œæã€‚=+æœ‰-æ²¡~#visitornameæ²¡æœ‰æ‰˜è¿è¡Œæã€‚=+æ²¡æœ‰
+reference=bag_total_weight:number|#visitorname,rule-find-bagtotalweight,?|æ‰˜è¿è¡Œæçš„æ€»é‡é‡æ˜¯å¤šå°‘ï¼Ÿ|æ‰˜è¿è¡Œæä¸€å…±[]å•ä½ã€‚
+reference=bag_weight_unit|#visitorname,rule-find-bagweightunit,?|æ‰˜è¿è¡Œæçš„é‡é‡æ˜¯ä»€ä¹ˆï¼Ÿ|é‡é‡å•ä½æ˜¯[]ã€‚=+ç£…+å…¬æ–¤+æ–¤+åƒå…‹+kg+KG+Kg+lb
+reference=bag_indi_weight:number|#visitorname,rule-find-bagindiweight,?|æ‰˜è¿è¡Œæçš„æœ€å¤§é‡é‡æ˜¯å¤šå°‘ï¼Ÿ|æ‰˜è¿è¡Œææœ€å¤§[]å•ä½ã€‚
+reference=cheap_flight|#visitorname,rule-find-cheapflight,?|æ˜¯å¦è¦å»‰ä»·èˆªç©ºï¼Ÿ|#visitornameæƒ³è¦å»‰ä»·èˆªç©ºã€‚=è¦+æƒ³è¦+å»‰ä»·èˆªç©º+å»‰èˆª-ä¸~#visitornameä¸æƒ³è¦å»‰ä»·èˆªç©ºã€‚=+ä¸è¦+ä¸æƒ³è¦+ä¸+ä¸é€‰+åˆ«é€‰+åˆ«ç»™+å¿½ç•¥
+reference=want_comp|#visitorname,rule-find-wantcomp,?|æƒ³é€‰ç”¨å“ªå®¶èˆªç©ºå…¬å¸ï¼Ÿ|#visitornameæƒ³é€‰ç”¨[]çš„æœºç¥¨ã€‚=++èˆªç©ºå…¬å¸
+reference=not_comp|#visitorname,rule-find-notcomp,?|ä¸æƒ³é€‰ç”¨å“ªå®¶èˆªç©ºå…¬å¸ï¼Ÿ|#visitornameä¸æƒ³é€‰ç”¨[]çš„æœºç¥¨ã€‚=++èˆªç©ºå…¬å¸~#visitornameè¦å…¶ä»–å…¬å¸ã€‚=+å…¶ä»–+åˆ«çš„+åˆ«+æ¢
+reference=want_plane|#visitorname,rule-find-wantplane,?|æƒ³é€‰ç”¨å“ªç§æœºå‹ï¼Ÿ|#visitornameæƒ³é€‰ç”¨[]ã€‚=++æœºå‹
+reference=not_plane|#visitorname,rule-find-notplane,?|ä¸æƒ³é€‰ç”¨å“ªç§æœºå‹ï¼Ÿ|#visitornameä¸æƒ³é€‰ç”¨[]ã€‚=++æœºå‹
+reference=depart_board_time:time|#visitorname,rule-find-depart-board-time,?|å»ç¨‹æƒ³é€‰ç”¨ä»€ä¹ˆç™»æœºæ—¶é—´ï¼Ÿ|#visitornameè¦åœ¨[]ç™»æœºå¾€å»é£ã€‚
+reference=return_board_time:time|#visitorname,rule-find-return-board-time,?|å›ç¨‹æƒ³é€‰ç”¨ä»€ä¹ˆç™»æœºæ—¶é—´ï¼Ÿ|#visitornameè¦åœ¨[]ä¸Šäº†é£æœºå¾€å›é£ã€‚
+reference=depart_board_period|#visitorname,rule-find-depart-board-period,?|å»ç¨‹æƒ³é€‰ç”¨ä»€ä¹ˆæ—¶é—´æ®µç™»æœºï¼Ÿ|#visitornameè¦åœ¨[]ç™»æœºå¾€å»é£ã€‚=+æ—©ä¸Š+æ—©æ™¨+ä¸Šåˆ+ä¸­åˆ+ä¸‹åˆ+æ™šä¸Š+å¤œé‡Œ+å‡Œæ™¨
+reference=return_board_period|#visitorname,rule-find-return-board-period,?|å›ç¨‹æƒ³é€‰ç”¨ä»€ä¹ˆæ—¶é—´æ®µç™»æœºï¼Ÿ|#visitornameè¦åœ¨[]ä¸Šäº†é£æœºå¾€å›é£ã€‚=+æ—©ä¸Š+æ—©æ™¨+ä¸Šåˆ+ä¸­åˆ+ä¸‹åˆ+æ™šä¸Š+å¤œé‡Œ+å‡Œæ™¨
+reference=depart_not_board_time:time|#visitorname,rule-find-depart-not-board-time,?|å»ç¨‹ä¸æƒ³é€‰ç”¨ä»€ä¹ˆç™»æœºæ—¶é—´ï¼Ÿ|#visitornameä¸è¦åœ¨[]ç™»æœºå¾€å»é£ã€‚
+reference=return_not_board_time:time|#visitorname,rule-find-return-not-board-time,?|å›ç¨‹ä¸æƒ³é€‰ç”¨ä»€ä¹ˆç™»æœºæ—¶é—´ï¼Ÿ|#visitornameä¸è¦åœ¨[]ç™»æœºå¾€å›é£ã€‚
+reference=depart_not_board_period|#visitorname,rule-find-depart-not-board-period,?|å»ç¨‹ä¸æƒ³é€‰ç”¨ä»€ä¹ˆæ—¶é—´æ®µç™»æœºï¼Ÿ|#visitornameä¸è¦åœ¨[]ç™»æœºå¾€å»é£ã€‚=+æ—©ä¸Š+æ—©æ™¨+ä¸Šåˆ+ä¸­åˆ+ä¸‹åˆ+æ™šä¸Š+å¤œé‡Œ+å‡Œæ™¨
+reference=return_not_board_period|#visitorname,rule-find-return-not-board-period,?|å›ç¨‹ä¸æƒ³é€‰ç”¨ä»€ä¹ˆæ—¶é—´æ®µç™»æœºï¼Ÿ|#visitornameä¸è¦åœ¨[]ç™»æœºå¾€å›é£ã€‚=+æ—©ä¸Š+æ—©æ™¨+ä¸Šåˆ+ä¸­åˆ+ä¸‹åˆ+æ™šä¸Š+å¤œé‡Œ+å‡Œæ™¨
+reference=depart_arrival_time:time|#visitorname,rule-find-depart-arrival-time,?|å»ç¨‹æƒ³è¦ä»€ä¹ˆæ—¶é—´æŠµè¾¾ï¼Ÿ|#visitornameè¦åœ¨[]å¾€å»é£æ—¶æŠµè¾¾ã€‚
+reference=return_arrival_time:time|#visitorname,rule-find-return-arrival-time,?|å›ç¨‹æƒ³é€‰ç”¨ä»€ä¹ˆæ—¶é—´æŠµè¾¾ï¼Ÿ|#visitornameæƒ³åœ¨[]å¾€å›é£æ—¶æŠµè¾¾ã€‚
+reference=depart_arrival_period|#visitorname,rule-find-depart-arrival-period,?|å»ç¨‹æƒ³é€‰ç”¨ä»€ä¹ˆæ—¶é—´æ®µæŠµè¾¾ï¼Ÿ|#visitornameè¦åœ¨[]å¾€å»é£æ—¶æŠµè¾¾ã€‚=+æ—©ä¸Š+æ—©æ™¨+ä¸Šåˆ+ä¸­åˆ+ä¸‹åˆ+æ™šä¸Š+å¤œé‡Œ+å‡Œæ™¨
+reference=return_arrival_period|#visitorname,rule-find-return-arrival-period,?|å›ç¨‹æƒ³é€‰ç”¨ä»€ä¹ˆæ—¶é—´æ®µæŠµè¾¾ï¼Ÿ|#visitornameæƒ³åœ¨[]å¾€å›é£æ—¶æŠµè¾¾ã€‚=+æ—©ä¸Š+æ—©æ™¨+ä¸Šåˆ+ä¸­åˆ+ä¸‹åˆ+æ™šä¸Š+å¤œé‡Œ+å‡Œæ™¨
+reference=depart_not_arrival_time:time|#visitorname,rule-find-depart-not-arrival-time,?|å»ç¨‹ä¸æƒ³è¦ä»€ä¹ˆæ—¶é—´æŠµè¾¾ï¼Ÿ|#visitornameä¸è¦åœ¨[]å¾€å»é£æ—¶æŠµè¾¾ã€‚
+reference=return_not_arrival_time:time|#visitorname,rule-find-return-not-arrival-time,?|å›ç¨‹ä¸æƒ³é€‰ç”¨ä»€ä¹ˆæ—¶é—´æŠµè¾¾ï¼Ÿ|#visitornameä¸è¦åœ¨[]å¾€å›é£æ—¶æŠµè¾¾ã€‚
+reference=depart_not_arrival_period|#visitorname,rule-find-depart-not-arrival-period,?|å»ç¨‹ä¸æƒ³é€‰ç”¨ä»€ä¹ˆæ—¶é—´æ®µæŠµè¾¾ï¼Ÿ|#visitornameä¸è¦åœ¨[]å¾€å»é£æ—¶æŠµè¾¾ã€‚=+æ—©ä¸Š+æ—©æ™¨+ä¸Šåˆ+ä¸­åˆ+ä¸‹åˆ+æ™šä¸Š+å¤œé‡Œ+å‡Œæ™¨
+reference=return_not_arrival_period|#visitorname,rule-find-return-not-arrival-period,?|å›ç¨‹ä¸æƒ³é€‰ç”¨ä»€ä¹ˆæ—¶é—´æ®µæŠµè¾¾ï¼Ÿ|#visitornameä¸è¦åœ¨[]å¾€å›é£æ—¶æŠµè¾¾ã€‚=+æ—©ä¸Š+æ—©æ™¨+ä¸Šåˆ+ä¸­åˆ+ä¸‹åˆ+æ™šä¸Š+å¤œé‡Œ+å‡Œæ™¨
+reference=price_ceiling:number|#visitorname,rule-find-priceceiling,?|æœºç¥¨çš„æœ€é«˜ä»·æ ¼æ˜¯ï¼Ÿ|#visitornameèƒ½å¤Ÿæ¥å—æœ€é«˜ä»·æ ¼æ˜¯[]å…ƒã€‚
+reference=has_price_ceiling|#visitorname,rule-find-haspriceceiling,?|æœºç¥¨çš„æœ€é«˜ä»·æ ¼æ˜¯ï¼Ÿ|#visitornameæœ‰æœ€é«˜ä»·æ ¼ã€‚=+æœ‰-æ²¡~#visitornameæ²¡æœ‰æœ€é«˜ä»·æ ¼ã€‚=+æ²¡æœ‰
+reference=price_floor:number|#visitorname,rule-find-pricefloor,?|æœºç¥¨çš„æœ€ä½ä»·æ ¼æ˜¯ï¼Ÿ|#visitornameèƒ½å¤Ÿæ¥å—æœ€ä½ä»·æ ¼æ˜¯[]å…ƒã€‚
+reference=has_price_floor|#visitorname,rule-find-haspricefloor,?|æœºç¥¨çš„æœ€ä½ä»·æ ¼æ˜¯ï¼Ÿ|#visitornameæœ‰æœ€ä½ä»·æ ¼ã€‚=+æœ‰-æ²¡~#visitornameæ²¡æœ‰æœ€ä½ä»·æ ¼ã€‚=+æ²¡æœ‰
+reference=sort_by|#visitorname,rule-find-sortby,?|æŒ‰ç…§ä»€ä¹ˆé¡ºåºæ’åˆ—ï¼Ÿ|#visitornameæƒ³è¦æŒ‰ç…§[]æ¥æ’åˆ—ã€‚=+ä»·æ ¼+æ—¶é—´+ç»¼åˆ
+reference=find_most|#visitorname,rule-find-find-most,?|è¦æ‰¾ä»€ä¹ˆæ ·çš„ï¼Ÿ|#visitornameè¦æœ€[]ã€‚=+ä¾¿å®œ+è´µ+å®æƒ +æ—©+æ™š~#visitornameè¦ç›´é£ã€‚=+ç›´è¾¾+ç›´é£~#visitornameè¦ä¸­è½¬ã€‚=+ä¸­è½¬
+reference=finish_order|#visitorname,rule-find-finish-order,?|ç¡®å®šè®¢ç¥¨å—ï¼Ÿ|#visitornameæƒ³è¦ä¸‹è®¢å•ã€‚=+ä¸é”™+æƒ³è¦+è¦+å¥½+æ˜¯+å¯¹+è®¢+ä¸‹å•+ä¹°+OK+å—¯+å®š+å¯ä»¥+å°±è¿™å¼ +ä¸‹å§~#visitornameä¸æƒ³è¦ä¸‹è®¢å•ã€‚=+ä¸+ä¸è¦+ä¸æƒ³+å–æ¶ˆ
+reference=change_depart_time_direction|#visitorname,rule-find-change-time-direction,?|è¦æ‰¾æ›´æ—©çš„è¿˜æ˜¯æ›´æ™šçš„ï¼Ÿ|#visitornameè¦æ›´[]çš„ã€‚=+æ—©+æ™š+å‰+å+è¿Ÿ+æå‰+å»¶æœŸ+æ—©ç‚¹+æ™šç‚¹+ææ—©+ä»¥å
+reference=change_depart_time_by_day:number|#visitorname,rule-find-change-time-by-day,?|#visitornameè¦å˜æ›´[]å¤©ã€‚
+reference=change_depart_time_by_hour:number|#visitorname,rule-find-change-time-by-hour,?|#visitornameè¦å˜æ›´[]å°æ—¶ã€‚
+reference=not_transfer|#visitorname,rule-find-not-transfer,?|ä¸è¦ä¸­è½¬çš„ç¥¨|#visitornameè¦ç›´é£=+ä¸­è½¬
+reference=not_direct|#visitorname,rule-find-not-direct,?|ä¸è¦ç›´é£çš„ç¥¨|#visitornameè¦ä¸­è½¬=+ç›´é£+ç›´è¾¾
+reference=choice_period|#visitorname,rule-find-choice-period,?|ä½ æƒ³æ›´æ”¹æ—¶é—´æ®µå—ï¼Ÿ|#visitornameæƒ³æŠŠæ—¶é—´æ®µæ”¹ä¸º[]ã€‚=++æ—¶é—´
+reference=choice_time:time|#visitorname,rule-find-choice-time,?|ä½ æƒ³æ›´æ”¹æ—¶é—´å—ï¼Ÿ|#visitornameæƒ³æŠŠæ—¶é—´æ”¹ä¸º[]ã€‚
+reference=find_reverse|#visitorname,rule-find-reverse,?|ä¸è¦æ‰¾ä»€ä¹ˆæ ·çš„?|#visitornameæƒ³é€‰æ‹©[]åå‘çš„ã€‚=+ä¾¿å®œ+è´µ+æ—©+æ™š+å¥½è´µ+è¿Ÿ
+reference=change_flight|#visitorname,rule-find-change-flight,?|æ¢èˆªç­|#visitornameå¯»æ‰¾å…¶ä»–èˆªç­ã€‚=+å…¶ä»–+åˆ«çš„+åˆ«+æ¢
 process=nextStep=make_order|ask_decide_makeorder=clear_active|
 process=nextStep=start|ask_start_loc=clear_active|
 process=nextStep=destination|ask_destination_loc=clear_active|
@@ -244,41 +247,51 @@ process=nextStep=change_depart_time_direction|ask_change_depart_time_direction=c
 process=nextStep=change_depart_time_by_day|ask_change_depart_time_by_day=clear_active|
 process=nextStep=change_depart_time_by_hour|ask_change_depart_time_by_hour=clear_active|
 process=nextStep=choice_period|ask_choice_period=clear_active|
-process=nextStep=choice_time|ask_choice_period=clear_active|
+process=nextStep=choice_time|ask_choice_time=clear_active|
+process=nextStep=find_reverse|ask_find_reverse=clear_active|
+process=nextStep=change_flight|ask_change_flight=clear_active|
+
+name=find_reverse
+status=listening
+action=select
+conflict=main_httppost
+condition=find_reverse|#visitorname,rule-find-reverse,?|ä¸è¦æ‰¾ä»€ä¹ˆæ ·çš„?|#visitornameæƒ³é€‰æ‹©[]åå‘çš„ã€‚=+ä¾¿å®œ+è´µ+æ—©+æ™š+å¥½è´µ+è¿Ÿ
+process=completed=true|select_by_additional_httppost=active|
 
 name=take_out_trash_listening
 status=listening
 action=select
 conflict=main_httppost
-condition=trash|#visitorname,rule-take-out-trash,?|ÌŞ³ı¹Ø¼ü×ÖÒª|#visitorname£¬ÌŞ³ı¹Ø¼ü×Ö¡£=+Òª+¶©+ÒªÑ¡ÓÃ+ÏëÒªÑ¡ÓÃ+ÏëÒªÂò+Òª°ï+Òª¸ø+Òª+ÏëÒª¶¨+ÒªËÍ+ÒªÈ¥+Òª´ø+ÏëÂò+ÏëÒª+ÒªÊÇ+ÏëÒª¶©+Òª¶©+Òª¶¨+Ïë¶©+ÊÇ+»¹ÊÇ+Ïë´ø+¶¨+ÊÇµÄ+Âò+ºÃ+ºÃ¿´+none
+condition=trash|#visitorname,rule-take-out-trash,?|å‰”é™¤å…³é”®å­—è¦|#visitornameï¼Œå‰”é™¤å…³é”®å­—ã€‚=+è¦+è®¢+è¦é€‰ç”¨+æƒ³è¦é€‰ç”¨+æƒ³è¦ä¹°+è¦å¸®+è¦ç»™+è¦+æƒ³è¦å®š+è¦é€+è¦å»+è¦å¸¦+æƒ³ä¹°+æƒ³è¦+è¦æ˜¯+æƒ³è¦è®¢+è¦è®¢+è¦å®š+æƒ³è®¢+æ˜¯+è¿˜æ˜¯+æƒ³å¸¦+å®š+æ˜¯çš„+ä¹°+å¥½+å¥½çœ‹+ä¸é”™+none
 process=completed=true|select_by_additional_httppost=active|
 
 name=decide_makeorder
 action=select
 status=listening
 conflict=main_httppost,ask_decide_makeorder
-condition=makeorder:number|#visitorname,rule-find-order,?|ÄúÏëÑ¡ÔñµÚ¼¸¸ö£¿|#visitornameÏëÑ¡ÔñµÚ[]¸ö¡£
+condition=makeorder:number|#visitorname,rule-find-order,?|æ‚¨æƒ³é€‰æ‹©ç¬¬å‡ ä¸ªï¼Ÿ|#visitornameæƒ³é€‰æ‹©ç¬¬[]ä¸ªã€‚
 process=completed=true|select_by_additional_httppost=active|
 
 name=change_today
 action=select
 status=listening
-condition=today|#visitorname,rule-same-day-return,?|zhuanhuan|#visitornameÒª»ù×¼ÈÕ·µ»Ø¡£
+condition=today|#visitorname,rule-same-day-return,?|zhuanhuan|#visitornameè¦åŸºå‡†æ—¥è¿”å›ã€‚
 process=completed=true|main_httppost=active|
 
 name=change_start_loc
 action=select
 status=listening
 conflict=main_httppost,ask_start_loc
-condition=start:location|#visitorname,rule-find-start,?|ÄúÏë´ÓÄÄ¸ö³ÇÊĞ³ö·¢£¿|#visitornameÏë´Ó[]³ö·¢¡£
+condition=start:location|#visitorname,rule-find-start,?|æ‚¨æƒ³ä»å“ªä¸ªåŸå¸‚å‡ºå‘ï¼Ÿ|#visitornameæƒ³ä»[]å‡ºå‘ã€‚
 process=completed=true|select_by_additional_httppost=active|
 
 
 name=change_destination_loc
 action=select
 status=listening
-conflict=main_httppost,ask_destination
-condition=destination:location|#visitorname,rule-find-destination,?|ÄúÏë·Éµ½ÄÄ¸ö³ÇÊĞ£¿|#visitornameÏë·Éµ½[]¡£
+conflict=main_httppost,ask_destination_loc
+fellow=select_by_additional_httppost
+condition=destination:location|#visitorname,rule-find-destination,?|æ‚¨æƒ³é£åˆ°å“ªä¸ªåŸå¸‚ï¼Ÿ|#visitornameæƒ³é£åˆ°[]ã€‚
 process=completed=true|select_by_additional_httppost=active|
 
 
@@ -286,7 +299,7 @@ name=change_round_trip
 action=select
 status=listening
 conflict=main_httppost,ask_round_trip
-condition=return|#visitorname,rule-find-return,?|ÊÇÍù·µ»¹ÊÇµ¥³Ì£¿|#visitornameÏë¶©[]µÄÆ±¡£=+µ¥³Ì+Íù·µ+À´»Ø+·µ»Ø+·µ³Ì+·µ»ØµÄ
+condition=return|#visitorname,rule-find-return,?|æ˜¯å¾€è¿”è¿˜æ˜¯å•ç¨‹ï¼Ÿ|#visitornameæƒ³è®¢[]çš„ç¥¨ã€‚=+å•ç¨‹+å¾€è¿”+æ¥å›+è¿”å›+è¿”ç¨‹+è¿”å›çš„+å›ç¨‹+å›æ¥ 
 process=completed=true|select_by_additional_httppost=active|
 
 
@@ -294,7 +307,7 @@ name=change_departure_date
 action=select
 status=listening
 conflict=main_httppost,ask_departure_date
-condition=depart_time:time|#visitorname,rule-find-departtime,?|ÄúÏëÊ²Ã´Ê±ºò³ö·¢£¿|#visitornameÏëÔÚ[]³ö·¢¡£
+condition=depart_time:time|#visitorname,rule-find-departtime,?|æ‚¨æƒ³ä»€ä¹ˆæ—¶å€™å‡ºå‘ï¼Ÿ|#visitornameæƒ³åœ¨[]å‡ºå‘ã€‚
 process=completed=true|select_by_additional_httppost=active|
 
 
@@ -302,7 +315,7 @@ name=change_return_date
 action=select
 status=listening
 conflict=main_httppost,ask_return_date
-condition=return_time:time|#visitorname,rule-find-returntime,?|ÄúÏëÊ²Ã´Ê±ºò·µ»Ø£¿|#visitornameÏë[]·µ»Ø¡£
+condition=return_time:time|#visitorname,rule-find-returntime,?|æ‚¨æƒ³ä»€ä¹ˆæ—¶å€™è¿”å›ï¼Ÿ|#visitornameæƒ³[]è¿”å›ã€‚
 process=completed=true|select_by_additional_httppost=active|
 
 
@@ -310,7 +323,7 @@ name=change_cabin_class
 action=select
 status=listening
 conflict=main_httppost,ask_cabin_class
-condition=cabinclass|#visitorname,rule-find-cabinclass,?|ÄúÑ¡ÔñÊ²Ã´²ÕÎ»£¿|#visitornameÏëÒª[]¡£=++²ÖÎ»
+condition=cabinclass|#visitorname,rule-find-cabinclass,?|æ‚¨é€‰æ‹©ä»€ä¹ˆèˆ±ä½ï¼Ÿ|#visitornameæƒ³è¦[]ã€‚=++ä»“ä½
 process=completed=true|select_by_additional_httppost=active|
 
 
@@ -318,7 +331,7 @@ name=change_ticket_amount
 action=select
 status=listening
 conflict=main_httppost,ask_ticket_amount
-condition=ticket_amount:number|#visitorname,rule-find-ticket-amount,?|ÄúÒª¼¸ÕÅÆ±£¿|#visitornameÏëÒª[]ÕÅÆ±¡£
+condition=ticket_amount:number|#visitorname,rule-find-ticket-amount,?|æ‚¨è¦å‡ å¼ ç¥¨ï¼Ÿ|#visitornameæƒ³è¦[]å¼ ç¥¨ã€‚
 process=completed=true|select_by_additional_httppost=active|
 
 
@@ -326,7 +339,7 @@ name=change_companion
 action=select
 status=listening
 conflict=main_httppost,ask_companion
-condition=companion|#visitorname,rule-find-companion,?|ÄãÒªºÍ±ğÈËÒ»ÆğÍ¬ĞĞÂğ£¿|Ò»¹²ÓĞ1Î»³ÉÈË¡£
+condition=companion|#visitorname,rule-find-companion,?|ä½ è¦å’Œåˆ«äººä¸€èµ·åŒè¡Œå—ï¼Ÿ|ä¸€å…±æœ‰1ä½æˆäººã€‚
 process=completed=true|select_by_additional_httppost=active|
 
 
@@ -334,7 +347,7 @@ name=change_couple
 action=select
 status=listening
 conflict=main_httppost,ask_couple
-condition=couple|#visitorname,rule-find-couple,?|ÄãÒªºÍ±ğÈËÒ»ÆğÍ¬ĞĞÂğ£¿|Ò»¹²ÓĞ2Î»³ÉÈË¡£
+condition=couple|#visitorname,rule-find-couple,?|ä½ è¦å’Œåˆ«äººä¸€èµ·åŒè¡Œå—ï¼Ÿ|ä¸€å…±æœ‰2ä½æˆäººã€‚
 process=completed=true|select_by_additional_httppost=active|
 
 
@@ -342,7 +355,7 @@ name=change_adult_number
 action=select
 status=listening
 conflict=main_httppost,ask_adult_number
-condition=adult_number:number|#visitorname,rule-find-adultnumber,?|Ò»¹²ÓĞ¼¸Î»³ÉÈË£¿|Ò»¹²ÓĞ[]Î»³ÉÈË¡£
+condition=adult_number:number|#visitorname,rule-find-adultnumber,?|ä¸€å…±æœ‰å‡ ä½æˆäººï¼Ÿ|ä¸€å…±æœ‰[]ä½æˆäººã€‚
 process=completed=true|select_by_additional_httppost=active|
 
 
@@ -350,7 +363,7 @@ name=change_has_adult
 action=select
 status=listening
 conflict=main_httppost,ask_has_adult
-condition=has_adult|#visitorname,rule-find-hasadult,?|ÊÇ·ñÓĞ³ÉÈË£¿|ÓĞ³ÉÈË¡£=+ÓĞ-Ã»~Ã»ÓĞ³ÉÈË¡£=+Ã»ÓĞ
+condition=has_adult|#visitorname,rule-find-hasadult,?|æ˜¯å¦æœ‰æˆäººï¼Ÿ|æœ‰æˆäººã€‚=+æœ‰-æ²¡~æ²¡æœ‰æˆäººã€‚=+æ²¡æœ‰
 process=completed=true|select_by_additional_httppost=active|
 
 
@@ -358,7 +371,7 @@ name=change_relatives_companion
 action=select
 status=listening
 conflict=main_httppost,ask_relatives_companion
-condition=son_companion|#visitorname,rule-find-son-companion,?|¶¼ÓĞÄÄĞ©Ç×ÆİÍ¬ĞĞ£¿|#visitornameºÍ[]Ò»ÆğÍ¬ĞĞ¡£=+Ç×ÆİÃû
+condition=relative_companion|#visitorname,rule-find-relative-companion,?|éƒ½æœ‰å“ªäº›äº²æˆšåŒè¡Œï¼Ÿ|#visitornameå’Œ[]ä¸€èµ·åŒè¡Œã€‚=++äº²æˆšå
 process=completed=true|select_by_additional_httppost=active|
 
 
@@ -366,7 +379,7 @@ name=change_included_child_number
 action=select
 status=listening
 conflict=main_httppost,ask_included_child_number
-condition=included_child_number:number|#visitorname,rule-find-included-child-number,?|ÆäÖĞÓĞ¼¸Î»¶ùÍ¯£¿|ÆäÖĞÓĞ[]Î»¶ùÍ¯¡£
+condition=included_child_number:number|#visitorname,rule-find-included-child-number,?|å…¶ä¸­æœ‰å‡ ä½å„¿ç«¥ï¼Ÿ|å…¶ä¸­æœ‰[]ä½å„¿ç«¥ã€‚
 process=completed=true|select_by_additional_httppost=active|
 
 
@@ -374,7 +387,7 @@ name=change_child_number
 action=select
 status=listening
 conflict=main_httppost,ask_child_number
-condition=child_number:number|#visitorname,rule-find-childnumber,?|Ò»¹²ÓĞ¼¸Î»¶ùÍ¯£¿|Ò»¹²ÓĞ[]Î»¶ùÍ¯¡£
+condition=child_number:number|#visitorname,rule-find-childnumber,?|ä¸€å…±æœ‰å‡ ä½å„¿ç«¥ï¼Ÿ|ä¸€å…±æœ‰[]ä½å„¿ç«¥ã€‚
 process=completed=true|select_by_additional_httppost=active|
 
 
@@ -382,7 +395,7 @@ name=change_has_child
 action=select
 status=listening
 conflict=main_httppost,ask_has_child
-condition=has_child|#visitorname,rule-find-haschild,?|ÊÇ·ñÓĞ¶ùÍ¯£¿|ÓĞ¶ùÍ¯¡£=+ÓĞ-Ã»~Ã»ÓĞ¶ùÍ¯¡£=+Ã»ÓĞ
+condition=has_child|#visitorname,rule-find-haschild,?|æ˜¯å¦æœ‰å„¿ç«¥ï¼Ÿ|æœ‰å„¿ç«¥ã€‚=+æœ‰-æ²¡~æ²¡æœ‰å„¿ç«¥ã€‚=+æ²¡æœ‰
 process=completed=true|select_by_additional_httppost=active|
 
 
@@ -390,7 +403,7 @@ name=change_included_infant_number
 action=select
 status=listening
 conflict=main_httppost,ask_included_infant_number
-condition=included_infant_number:number|#visitorname,rule-find-included-infant-number,?|ÆäÖĞÓĞ¼¸Î»Ó¤¶ù£¿|ÆäÖĞÓĞ[]Î»Ó¤¶ù¡£
+condition=included_infant_number:number|#visitorname,rule-find-included-infant-number,?|å…¶ä¸­æœ‰å‡ ä½å©´å„¿ï¼Ÿ|å…¶ä¸­æœ‰[]ä½å©´å„¿ã€‚
 process=completed=true|select_by_additional_httppost=active|
 
 
@@ -398,7 +411,7 @@ name=change_infant_number
 action=select
 status=listening
 conflict=main_httppost,ask_infant_number
-condition=infant_number:number|#visitorname,rule-find-infantnumber,?|Ò»¹²ÓĞ¼¸Î»Ó¤¶ù£¿|Ò»¹²ÓĞ[]Î»Ó¤¶ù¡£
+condition=infant_number:number|#visitorname,rule-find-infantnumber,?|ä¸€å…±æœ‰å‡ ä½å©´å„¿ï¼Ÿ|ä¸€å…±æœ‰[]ä½å©´å„¿ã€‚
 process=completed=true|select_by_additional_httppost=active|
 
 
@@ -406,7 +419,7 @@ name=change_in_seat_infant_number
 action=select
 status=listening
 conflict=main_httppost,ask_in_seat_infant_number
-condition=in_seat_infant_number:number|#visitorname,rule-find-in-seat-infant-number,?|Ò»¹²Òª¼¸¸öÓ¤¶ù×ùÎ»£¿|Ó¤¶ù×ùÎ»Òª[]¸ö¡£
+condition=in_seat_infant_number:number|#visitorname,rule-find-in-seat-infant-number,?|ä¸€å…±è¦å‡ ä¸ªå©´å„¿åº§ä½ï¼Ÿ|å©´å„¿åº§ä½è¦[]ä¸ªã€‚
 process=completed=true|select_by_additional_httppost=active|
 
 
@@ -414,7 +427,7 @@ name=change_has_infant
 action=select
 status=listening
 conflict=main_httppost,ask_has_infant
-condition=has_infant|#visitorname,rule-find-hasinfant,?|ÊÇ·ñÓĞÓ¤¶ù£¿|ÓĞÓ¤¶ù¡£=+ÓĞ-Ã»~Ã»ÓĞÓ¤¶ù¡£=+Ã»ÓĞ
+condition=has_infant|#visitorname,rule-find-hasinfant,?|æ˜¯å¦æœ‰å©´å„¿ï¼Ÿ|æœ‰å©´å„¿ã€‚=+æœ‰-æ²¡~æ²¡æœ‰å©´å„¿ã€‚=+æ²¡æœ‰
 process=completed=true|select_by_additional_httppost=active|
 
 
@@ -422,7 +435,7 @@ name=change_check_bag_number
 action=select
 status=listening
 conflict=main_httppost,ask_check_bag_number
-condition=check_bag_number:number|#visitorname,rule-find-checkbagnumber,?|Ò»¹²ÓĞ¼¸¸öÍĞÔËĞĞÀî£¿|Ò»¹²ÓĞ[]¸öÍĞÔËĞĞÀî¡£
+condition=check_bag_number:number|#visitorname,rule-find-checkbagnumber,?|ä¸€å…±æœ‰å‡ ä¸ªæ‰˜è¿è¡Œæï¼Ÿ|ä¸€å…±æœ‰[]ä¸ªæ‰˜è¿è¡Œæã€‚
 process=completed=true|select_by_additional_httppost=active|
 
 
@@ -430,7 +443,7 @@ name=change_has_check_bag
 action=select
 status=listening
 conflict=main_httppost,ask_has_check_bag
-condition=has_check_bag|#visitorname,rule-find-hascheckbag,?|ÊÇ·ñÓĞÍĞÔËĞĞÀî£¿|#visitornameÓĞÍĞÔËĞĞÀî¡£=+ÓĞ-Ã»~#visitornameÃ»ÓĞÍĞÔËĞĞÀî¡£=+Ã»ÓĞ
+condition=has_check_bag|#visitorname,rule-find-hascheckbag,?|æ˜¯å¦æœ‰æ‰˜è¿è¡Œæï¼Ÿ|#visitornameæœ‰æ‰˜è¿è¡Œæã€‚=+æœ‰-æ²¡~#visitornameæ²¡æœ‰æ‰˜è¿è¡Œæã€‚=+æ²¡æœ‰
 process=completed=true|select_by_additional_httppost=active|
 
 
@@ -438,7 +451,7 @@ name=change_bag_total_weight
 action=select
 status=listening
 conflict=main_httppost,ask_bag_total_weight
-condition=bag_total_weight:number|#visitorname,rule-find-bagtotalweight,?|ÍĞÔËĞĞÀîµÄ×ÜÖØÁ¿ÊÇ¶àÉÙ£¿|ÍĞÔËĞĞÀîÒ»¹²[]µ¥Î»¡£
+condition=bag_total_weight:number|#visitorname,rule-find-bagtotalweight,?|æ‰˜è¿è¡Œæçš„æ€»é‡é‡æ˜¯å¤šå°‘ï¼Ÿ|æ‰˜è¿è¡Œæä¸€å…±[]å•ä½ã€‚
 process=completed=true|select_by_additional_httppost=active|
 
 
@@ -446,7 +459,7 @@ name=change_bag_weight_unit
 action=select
 status=listening
 conflict=main_httppost,ask_bag_weight_unit
-condition=bag_weight_unit|#visitorname,rule-find-bagweightunit,?|ÍĞÔËĞĞÀîµÄÖØÁ¿µ¥Î»ÊÇÊ²Ã´£¿|ÖØÁ¿µ¥Î»ÊÇ[]¡£=+°õ+¹«½ï+½ï+Ç§¿Ë+kg+KG+Kg+lb
+condition=bag_weight_unit|#visitorname,rule-find-bagweightunit,?|æ‰˜è¿è¡Œæçš„é‡é‡å•ä½æ˜¯ä»€ä¹ˆï¼Ÿ|é‡é‡å•ä½æ˜¯[]ã€‚=+ç£…+å…¬æ–¤+æ–¤+åƒå…‹+kg+KG+Kg+lb
 process=completed=true|select_by_additional_httppost=active|
 
 
@@ -454,7 +467,7 @@ name=change_bag_indi_weight
 action=select
 status=listening
 conflict=main_httppost,ask_bag_indi_weight
-condition=bag_indi_weight:number|#visitorname,rule-find-bagindiweight,?|ÍĞÔËĞĞÀîµÄ×î´óÖØÁ¿ÊÇ¶àÉÙ£¿|ÍĞÔËĞĞÀî×î´ó[]µ¥Î»¡£
+condition=bag_indi_weight:number|#visitorname,rule-find-bagindiweight,?|æ‰˜è¿è¡Œæçš„æœ€å¤§é‡é‡æ˜¯å¤šå°‘ï¼Ÿ|æ‰˜è¿è¡Œææœ€å¤§[]å•ä½ã€‚
 process=completed=true|select_by_additional_httppost=active|
 
 
@@ -462,7 +475,7 @@ name=change_cheap_flight
 action=select
 status=listening
 conflict=main_httppost,ask_cheap_flight
-condition=cheap_flight|#visitorname,rule-find-cheapflight,?|ÊÇ·ñÒªÁ®¼Ûº½¿Õ£¿|#visitornameÏëÒªÁ®¼Ûº½¿Õ¡£=Òª+ÏëÒª+Á®¼Ûº½¿Õ+Á®º½-²»~#visitorname²»ÏëÒªÁ®¼Ûº½¿Õ¡£=+²»Òª+²»ÏëÒª+²»+²»Ñ¡+±ğÑ¡+±ğ¸ø+ºöÂÔ
+condition=cheap_flight|#visitorname,rule-find-cheapflight,?|æ˜¯å¦è¦å»‰ä»·èˆªç©ºï¼Ÿ|#visitornameæƒ³è¦å»‰ä»·èˆªç©ºã€‚=è¦+æƒ³è¦+å»‰ä»·èˆªç©º+å»‰èˆª-ä¸~#visitornameä¸æƒ³è¦å»‰ä»·èˆªç©ºã€‚=+ä¸è¦+ä¸æƒ³è¦+ä¸+ä¸é€‰+åˆ«é€‰+åˆ«ç»™+å¿½ç•¥
 process=completed=true|select_by_additional_httppost=active|
 
 
@@ -470,7 +483,7 @@ name=change_want_comp
 action=select
 status=listening
 conflict=main_httppost,ask_want_comp
-condition=want_comp|#visitorname,rule-find-wantcomp,?|ÏëÑ¡ÓÃÄÄ¼Òº½¿Õ¹«Ë¾£¿|#visitornameÏëÑ¡ÓÃ[]µÄ»úÆ±¡£=++º½¿Õ¹«Ë¾
+condition=want_comp|#visitorname,rule-find-wantcomp,?|æƒ³é€‰ç”¨å“ªå®¶èˆªç©ºå…¬å¸ï¼Ÿ|#visitornameæƒ³é€‰ç”¨[]çš„æœºç¥¨ã€‚=++èˆªç©ºå…¬å¸
 process=completed=true|select_by_additional_httppost=active|
 
 
@@ -478,7 +491,7 @@ name=change_not_comp
 action=select
 status=listening
 conflict=main_httppost,ask_not_comp
-condition=not_comp|#visitorname,rule-find-notcomp,?|²»ÏëÑ¡ÓÃÄÄ¼Òº½¿Õ¹«Ë¾£¿|#visitorname²»ÏëÑ¡ÓÃ[]µÄ»úÆ±¡£=++º½¿Õ¹«Ë¾~#visitornameÒªÆäËû¹«Ë¾¡£=+ÆäËû+±ğµÄ+±ğ+»»
+condition=not_comp|#visitorname,rule-find-notcomp,?|ä¸æƒ³é€‰ç”¨å“ªå®¶èˆªç©ºå…¬å¸ï¼Ÿ|#visitornameä¸æƒ³é€‰ç”¨[]çš„æœºç¥¨ã€‚=++èˆªç©ºå…¬å¸~#visitornameè¦å…¶ä»–å…¬å¸ã€‚=+å…¶ä»–+åˆ«çš„+åˆ«+æ¢
 process=completed=true|select_by_additional_httppost=active|
 
 
@@ -486,7 +499,7 @@ name=change_want_plane
 action=select
 status=listening
 conflict=main_httppost,ask_want_plane
-condition=want_plane|#visitorname,rule-find-wantplane,?|ÏëÑ¡ÓÃÄÄÖÖ»úĞÍ£¿|#visitornameÏëÑ¡ÓÃ[]¡£=++»úĞÍ
+condition=want_plane|#visitorname,rule-find-wantplane,?|æƒ³é€‰ç”¨å“ªç§æœºå‹ï¼Ÿ|#visitornameæƒ³é€‰ç”¨[]ã€‚=++æœºå‹
 process=completed=true|select_by_additional_httppost=active|
 
 
@@ -494,7 +507,7 @@ name=change_not_plane
 action=select
 status=listening
 conflict=main_httppost,ask_not_plane
-condition=not_plane|#visitorname,rule-find-notplane,?|²»ÏëÑ¡ÓÃÄÄÖÖ»úĞÍ£¿|#visitorname²»ÏëÑ¡ÓÃ[]¡£=++»úĞÍ
+condition=not_plane|#visitorname,rule-find-notplane,?|ä¸æƒ³é€‰ç”¨å“ªç§æœºå‹ï¼Ÿ|#visitornameä¸æƒ³é€‰ç”¨[]ã€‚=++æœºå‹
 process=completed=true|select_by_additional_httppost=active|
 
 
@@ -502,7 +515,7 @@ name=change_depart_board_time
 action=select
 status=listening
 conflict=main_httppost,ask_depart_board_time
-condition=depart_board_time:time|#visitorname,rule-find-depart-board-time,?|ÏëÑ¡ÓÃÊ²Ã´µÇ»úÊ±¼ä£¿|#visitornameÏëÔÚ[]Ê±µÇ»ú¡£
+condition=depart_board_time:time|#visitorname,rule-find-depart-board-time,?|å»ç¨‹æƒ³é€‰ç”¨ä»€ä¹ˆç™»æœºæ—¶é—´ï¼Ÿ|#visitornameè¦åœ¨[]ç™»æœºå¾€å»é£ã€‚
 process=completed=true|select_by_additional_httppost=active|
 
 
@@ -510,7 +523,7 @@ name=change_return_board_time
 action=select
 status=listening
 conflict=main_httppost,ask_return_board_time
-condition=return_board_time:time|#visitorname,rule-find-return-board-time,?|»Ø³ÌÏëÑ¡ÓÃÊ²Ã´µÇ»úÊ±¼ä£¿|»Ø³ÌÊ±£¬#visitornameÏëÔÚ[]Ê±µÇ»ú¡£
+condition=return_board_time:time|#visitorname,rule-find-return-board-time,?|å›ç¨‹æƒ³é€‰ç”¨ä»€ä¹ˆç™»æœºæ—¶é—´ï¼Ÿ|#visitornameè¦åœ¨[]ä¸Šäº†é£æœºå¾€å›é£ã€‚
 process=completed=true|select_by_additional_httppost=active|
 
 
@@ -518,7 +531,7 @@ name=change_depart_board_period
 action=select
 status=listening
 conflict=main_httppost,ask_depart_board_period
-condition=depart_board_period|#visitorname,rule-find-depart-board-period,?|È¥³ÌÏëÑ¡ÓÃÊ²Ã´Ê±¼ä¶ÎµÇ»ú£¿|È¥³ÌÊ±£¬#visitornameÏë[]µÇ»ú¡£=+ÔçÉÏ+Ôç³¿+ÉÏÎç+ÖĞÎç+ÏÂÎç+ÍíÉÏ+Ò¹Àï+Áè³¿
+condition=depart_board_period|#visitorname,rule-find-depart-board-period,?|å»ç¨‹æƒ³é€‰ç”¨ä»€ä¹ˆæ—¶é—´æ®µç™»æœºï¼Ÿ|#visitornameè¦åœ¨[]ç™»æœºå¾€å»é£ã€‚=+æ—©ä¸Š+æ—©æ™¨+ä¸Šåˆ+ä¸­åˆ+ä¸‹åˆ+æ™šä¸Š+å¤œé‡Œ+å‡Œæ™¨
 process=completed=true|select_by_additional_httppost=active|
 
 
@@ -526,7 +539,7 @@ name=change_return_board_period
 action=select
 status=listening
 conflict=main_httppost,ask_return_board_period
-condition=return_board_period|#visitorname,rule-find-return-board-period,?|»Ø³ÌÏëÑ¡ÓÃÊ²Ã´Ê±¼ä¶ÎµÇ»ú£¿|»Ø³ÌÊ±£¬#visitornameÏë[]µÇ»ú¡£=+ÔçÉÏ+Ôç³¿+ÉÏÎç+ÖĞÎç+ÏÂÎç+ÍíÉÏ+Ò¹Àï+Áè³¿
+condition=return_board_period|#visitorname,rule-find-return-board-period,?|å›ç¨‹æƒ³é€‰ç”¨ä»€ä¹ˆæ—¶é—´æ®µç™»æœºï¼Ÿ|#visitornameè¦åœ¨[]ä¸Šäº†é£æœºå¾€å›é£ã€‚=+æ—©ä¸Š+æ—©æ™¨+ä¸Šåˆ+ä¸­åˆ+ä¸‹åˆ+æ™šä¸Š+å¤œé‡Œ+å‡Œæ™¨
 process=completed=true|select_by_additional_httppost=active|
 
 
@@ -534,7 +547,7 @@ name=change_depart_not_board_time
 action=select
 status=listening
 conflict=main_httppost,ask_depart_not_board_time
-condition=depart_not_board_time:time|#visitorname,rule-find-depart-not-board-time,?|²»ÏëÑ¡ÓÃÊ²Ã´µÇ»úÊ±¼ä£¿|#visitorname²»ÏëÔÚ[]Ê±µÇ»ú¡£
+condition=depart_not_board_time:time|#visitorname,rule-find-depart-not-board-time,?|å»ç¨‹ä¸æƒ³é€‰ç”¨ä»€ä¹ˆç™»æœºæ—¶é—´ï¼Ÿ|#visitornameä¸è¦åœ¨[]ç™»æœºå¾€å»é£ã€‚
 process=completed=true|select_by_additional_httppost=active|
 
 
@@ -542,7 +555,7 @@ name=change_return_not_board_time
 action=select
 status=listening
 conflict=main_httppost,ask_return_not_board_time
-condition=return_not_board_time:time|#visitorname,rule-find-return-board-time,?|»Ø³Ì²»ÏëÑ¡ÓÃÊ²Ã´µÇ»úÊ±¼ä£¿|»Ø³ÌÊ±£¬#visitorname²»ÏëÔÚ[]Ê±µÇ»ú¡£
+condition=return_not_board_time:time|#visitorname,rule-find-return-not-board-time,?|å›ç¨‹ä¸æƒ³é€‰ç”¨ä»€ä¹ˆç™»æœºæ—¶é—´ï¼Ÿ|#visitornameä¸è¦åœ¨[]ç™»æœºå¾€å›é£ã€‚
 process=completed=true|select_by_additional_httppost=active|
 
 
@@ -550,7 +563,7 @@ name=change_depart_not_board_period
 action=select
 status=listening
 conflict=main_httppost,ask_depart_not_board_period
-condition=depart_not_board_period|#visitorname,rule-find-depart-not-board-period,?|È¥³Ì²»ÏëÑ¡ÓÃÊ²Ã´Ê±¼ä¶ÎµÇ»ú£¿|È¥³ÌÊ±£¬#visitorname²»Ïë[]µÇ»ú¡£=+ÔçÉÏ+Ôç³¿+ÉÏÎç+ÖĞÎç+ÏÂÎç+ÍíÉÏ+Ò¹Àï+Áè³¿
+condition=depart_not_board_period|#visitorname,rule-find-depart-not-board-period,?|å»ç¨‹ä¸æƒ³é€‰ç”¨ä»€ä¹ˆæ—¶é—´æ®µç™»æœºï¼Ÿ|#visitornameä¸è¦åœ¨[]ç™»æœºå¾€å»é£ã€‚=+æ—©ä¸Š+æ—©æ™¨+ä¸Šåˆ+ä¸­åˆ+ä¸‹åˆ+æ™šä¸Š+å¤œé‡Œ+å‡Œæ™¨
 process=completed=true|select_by_additional_httppost=active|
 
 
@@ -558,7 +571,7 @@ name=change_return_not_board_period
 action=select
 status=listening
 conflict=main_httppost,ask_return_not_board_period
-condition=return_not_board_period|#visitorname,rule-find-return-not-board-period,?|»Ø³Ì²»ÏëÑ¡ÓÃÊ²Ã´Ê±¼ä¶ÎµÇ»ú£¿|»Ø³ÌÊ±£¬#visitorname²»Ïë[]µÇ»ú¡£=+ÔçÉÏ+Ôç³¿+ÉÏÎç+ÖĞÎç+ÏÂÎç+ÍíÉÏ+Ò¹Àï+Áè³¿
+condition=return_not_board_period|#visitorname,rule-find-return-not-board-period,?|å›ç¨‹ä¸æƒ³é€‰ç”¨ä»€ä¹ˆæ—¶é—´æ®µç™»æœºï¼Ÿ|#visitornameä¸è¦åœ¨[]ç™»æœºå¾€å›é£ã€‚=+æ—©ä¸Š+æ—©æ™¨+ä¸Šåˆ+ä¸­åˆ+ä¸‹åˆ+æ™šä¸Š+å¤œé‡Œ+å‡Œæ™¨
 process=completed=true|select_by_additional_httppost=active|
 
 
@@ -566,7 +579,7 @@ name=change_depart_arrival_time
 action=select
 status=listening
 conflict=main_httppost,ask_depart_arrival_time
-condition=ddepart_arrival_time:time|#visitorname,rule-find-depart-arrival-time,?|È¥³ÌÏëÒªÊ²Ã´Ê±¼äµÖ´ï£¿|È¥³ÌÊ±£¬#visitornameÏëÔÚ[]Ê±µÖ´ï¡£
+condition=depart_arrival_time:time|#visitorname,rule-find-depart-arrival-time,?|å»ç¨‹æƒ³è¦ä»€ä¹ˆæ—¶é—´æŠµè¾¾ï¼Ÿ|#visitornameè¦åœ¨[]å¾€å»é£æ—¶æŠµè¾¾ã€‚
 process=completed=true|select_by_additional_httppost=active|
 
 
@@ -574,7 +587,7 @@ name=change_return_arrival_time
 action=select
 status=listening
 conflict=main_httppost,ask_return_arrival_time
-condition=return_arrival_time:time|#visitorname,rule-find-return-arrival-time,?|»Ø³ÌÏëÑ¡ÓÃÊ²Ã´Ê±¼äµÖ´ï£¿|»Ø³ÌÊ±£¬#visitornameÏëÔÚ[]Ê±µÖ´ï¡£
+condition=return_arrival_time:time|#visitorname,rule-find-return-arrival-time,?|å›ç¨‹æƒ³è¦ä»€ä¹ˆæ—¶é—´æŠµè¾¾ï¼Ÿ|#visitornameæƒ³åœ¨[]å¾€å›é£æ—¶æŠµè¾¾ã€‚
 process=completed=true|select_by_additional_httppost=active|
 
 
@@ -582,517 +595,536 @@ name=change_depart_arrival_period
 action=select
 status=listening
 conflict=main_httppost,ask_depart_arrival_period
-condition=depart_arrival_period|#visitorname,rule-find-depart-arrival-period,?|È¥³ÌÏëÑ¡ÓÃÊ²Ã´Ê±¼ä¶ÎµÖ´ï£¿|È¥³ÌÊ±£¬#visitornameÏë[]µÖ´ï¡£=+ÔçÉÏ+Ôç³¿+ÉÏÎç+ÖĞÎç+ÏÂÎç+ÍíÉÏ+Ò¹Àï+Áè³¿
+condition=depart_arrival_period|#visitorname,rule-find-depart-arrival-period,?|å»ç¨‹æƒ³é€‰ç”¨ä»€ä¹ˆæ—¶é—´æ®µæŠµè¾¾ï¼Ÿ|#visitornameè¦åœ¨[]å¾€å»é£æ—¶æŠµè¾¾ã€‚=+æ—©ä¸Š+æ—©æ™¨+ä¸Šåˆ+ä¸­åˆ+ä¸‹åˆ+æ™šä¸Š+å¤œé‡Œ+å‡Œæ™¨
 process=completed=true|select_by_additional_httppost=active|
 
 name=change_return_arrival_period
 action=select
 status=listening
 conflict=main_httppost,ask_return_arrival_period
-condition=return_arrival_period|#visitorname,rule-find-return-arrival-period,?|»Ø³ÌÏëÑ¡ÓÃÊ²Ã´Ê±¼ä¶ÎµÖ´ï£¿|È¥³ÌÊ±£¬#visitornameÏë[]µÖ´ï¡£=+ÔçÉÏ+Ôç³¿+ÉÏÎç+ÖĞÎç+ÏÂÎç+ÍíÉÏ+Ò¹Àï+Áè³¿
+condition=return_arrival_period|#visitorname,rule-find-return-arrival-period,?|å›ç¨‹æƒ³é€‰ç”¨ä»€ä¹ˆæ—¶é—´æ®µæŠµè¾¾ï¼Ÿ|#visitornameæƒ³åœ¨[]å¾€å›é£æ—¶æŠµè¾¾ã€‚=+æ—©ä¸Š+æ—©æ™¨+ä¸Šåˆ+ä¸­åˆ+ä¸‹åˆ+æ™šä¸Š+å¤œé‡Œ+å‡Œæ™¨
 process=completed=true|select_by_additional_httppost=active|
 
 name=change_depart_not_arrival_time
 action=select
 status=listening
 conflict=main_httppost,ask_depart_not_arrival_time
-condition=depart_not_arrival_time:time|#visitorname,rule-find-depart-not-arrival-time,?|È¥³Ì²»ÏëÒªÊ²Ã´Ê±¼äµÖ´ï£¿|#visitorname²»ÏëÔÚ[]Ê±µÖ´ï¡£
+condition=depart_not_arrival_time:time|#visitorname,rule-find-depart-not-arrival-time,?|å»ç¨‹ä¸æƒ³è¦ä»€ä¹ˆæ—¶é—´æŠµè¾¾ï¼Ÿ|#visitornameä¸è¦åœ¨[]å¾€å»é£æ—¶æŠµè¾¾ã€‚
 process=completed=true|select_by_additional_httppost=active|
 
 name=change_return_not_arrival_time
 action=select
 status=listening
 conflict=main_httppost,ask_return_not_arrival_time
-condition=return_not_arrival_time:time|#visitorname,rule-find-return-not-arrival-time,?|»Ø³Ì²»ÏëÑ¡ÓÃÊ²Ã´Ê±¼äµÖ´ï£¿|»Ø³ÌÊ±£¬#visitorname²»ÏëÔÚ[]Ê±µÖ´ï¡£
+condition=return_not_arrival_time:time|#visitorname,rule-find-return-not-arrival-time,?|å›ç¨‹ä¸æƒ³è¦ä»€ä¹ˆæ—¶é—´æŠµè¾¾ï¼Ÿ|#visitornameä¸è¦åœ¨[]å¾€å›é£æ—¶æŠµè¾¾ã€‚
 process=completed=true|select_by_additional_httppost=active|
 
 name=change_depart_not_arrival_period
 action=select
 status=listening
 conflict=main_httppost,ask_depart_not_arrival_period
-condition=depart_not_arrival_period|#visitorname,rule-find-depart-not-arrival-period,?|È¥³Ì²»ÏëÑ¡ÓÃÊ²Ã´Ê±¼ä¶ÎµÖ´ï£¿|È¥³ÌÊ±£¬#visitorname²»Ïë[]µÖ´ï¡£=+ÔçÉÏ+Ôç³¿+ÉÏÎç+ÖĞÎç+ÏÂÎç+ÍíÉÏ+Ò¹Àï+Áè³¿
+condition=depart_not_arrival_period|#visitorname,rule-find-depart-not-arrival-period,?|å»ç¨‹ä¸æƒ³é€‰ç”¨ä»€ä¹ˆæ—¶é—´æ®µæŠµè¾¾ï¼Ÿ|#visitornameä¸è¦åœ¨[]å¾€å»é£æ—¶æŠµè¾¾ã€‚=+æ—©ä¸Š+æ—©æ™¨+ä¸Šåˆ+ä¸­åˆ+ä¸‹åˆ+æ™šä¸Š+å¤œé‡Œ+å‡Œæ™¨
 process=completed=true|select_by_additional_httppost=active|
 
 name=change_return_not_arrival_period
 action=select
 status=listening
 conflict=main_httppost,ask_return_not_arrival_period
-condition=return_not_arrival_period|#visitorname,rule-find-return-not-arrival-period,?|»Ø³Ì²»ÏëÑ¡ÓÃÊ²Ã´Ê±¼ä¶ÎµÖ´ï£¿|»Ø³ÌÊ±£¬#visitorname²»Ïë[]µÖ´ï¡£=+ÔçÉÏ+Ôç³¿+ÉÏÎç+ÖĞÎç+ÏÂÎç+ÍíÉÏ+Ò¹Àï+Áè³¿
+condition=return_not_arrival_period|#visitorname,rule-find-return-not-arrival-period,?|å›ç¨‹ä¸æƒ³é€‰ç”¨ä»€ä¹ˆæ—¶é—´æ®µæŠµè¾¾ï¼Ÿ|#visitornameä¸è¦åœ¨[]å¾€å›é£æ—¶æŠµè¾¾ã€‚=+æ—©ä¸Š+æ—©æ™¨+ä¸Šåˆ+ä¸­åˆ+ä¸‹åˆ+æ™šä¸Š+å¤œé‡Œ+å‡Œæ™¨
 process=completed=true|select_by_additional_httppost=active|
 
 name=change_price_ceiling
 action=select
 status=listening
 conflict=main_httppost,ask_price_ceiling
-condition=price_ceiling:number|#visitorname,rule-find-priceceiling,?|»úÆ±µÄ×î¸ß¼Û¸ñÊÇ£¿|#visitornameÄÜ¹»½ÓÊÜ×î¸ß¼Û¸ñÊÇ[]Ôª¡£
+condition=price_ceiling:number|#visitorname,rule-find-priceceiling,?|æœºç¥¨çš„æœ€é«˜ä»·æ ¼æ˜¯ï¼Ÿ|#visitornameèƒ½å¤Ÿæ¥å—æœ€é«˜ä»·æ ¼æ˜¯[]å…ƒã€‚
 process=completed=true|select_by_additional_httppost=active|
 
 name=change_has_price_ceiling
 action=select
 status=listening
 conflict=main_httppost,ask_has_price_ceiling
-condition=has_price_ceiling|#visitorname,rule-find-haspriceceiling,?|»úÆ±µÄ×î¸ß¼Û¸ñÊÇ£¿|#visitornameÓĞ×î¸ß¼Û¸ñ¡£=+ÓĞ-Ã»~#visitornameÃ»ÓĞ×î¸ß¼Û¸ñ¡£=+Ã»ÓĞ
+condition=has_price_ceiling|#visitorname,rule-find-haspriceceiling,?|æœºç¥¨çš„æœ€é«˜ä»·æ ¼æ˜¯ï¼Ÿ|#visitornameæœ‰æœ€é«˜ä»·æ ¼ã€‚=+æœ‰-æ²¡~#visitornameæ²¡æœ‰æœ€é«˜ä»·æ ¼ã€‚=+æ²¡æœ‰
 process=completed=true|select_by_additional_httppost=active|
 
 name=change_price_floor
 action=select
 status=listening
 conflict=main_httppost,ask_price_floor
-condition=price_floor:number|#visitorname,rule-find-pricefloor,?|»úÆ±µÄ×îµÍ¼Û¸ñÊÇ£¿|#visitornameÄÜ¹»½ÓÊÜ×îµÍ¼Û¸ñÊÇ[]Ôª¡£
+condition=price_floor:number|#visitorname,rule-find-pricefloor,?|æœºç¥¨çš„æœ€ä½ä»·æ ¼æ˜¯ï¼Ÿ|#visitornameèƒ½å¤Ÿæ¥å—æœ€ä½ä»·æ ¼æ˜¯[]å…ƒã€‚
 process=completed=true|select_by_additional_httppost=active|
 
 name=change_has_price_floor
 action=select
 status=listening
 conflict=main_httppost,ask_has_price_floor
-condition=has_price_floor|#visitorname,rule-find-haspricefloor,?|»úÆ±µÄ×îµÍ¼Û¸ñÊÇ£¿|#visitornameÓĞ×îµÍ¼Û¸ñ¡£=+ÓĞ-Ã»~#visitornameÃ»ÓĞ×îµÍ¼Û¸ñ¡£=+Ã»ÓĞ
+condition=has_price_floor|#visitorname,rule-find-haspricefloor,?|æœºç¥¨çš„æœ€ä½ä»·æ ¼æ˜¯ï¼Ÿ|#visitornameæœ‰æœ€ä½ä»·æ ¼ã€‚=+æœ‰-æ²¡~#visitornameæ²¡æœ‰æœ€ä½ä»·æ ¼ã€‚=+æ²¡æœ‰
 process=completed=true|select_by_additional_httppost=active|
 
 name=change_sort
 action=select
 status=listening
 conflict=main_httppost,ask_sort
-condition=sort_by|#visitorname,rule-find-sortby,?|°´ÕÕÊ²Ã´Ë³ĞòÅÅÁĞ£¿|#visitornameÏëÒª°´ÕÕ[]À´ÅÅÁĞ¡£=+¼Û¸ñ+Ê±¼ä+×ÛºÏ
+condition=sort_by|#visitorname,rule-find-sortby,?|æŒ‰ç…§ä»€ä¹ˆé¡ºåºæ’åˆ—ï¼Ÿ|#visitornameæƒ³è¦æŒ‰ç…§[]æ¥æ’åˆ—ã€‚=+ä»·æ ¼+æ—¶é—´+ç»¼åˆ
 process=completed=true|select_by_additional_httppost=active|
 
 name=change_find_most
 action=select
 status=listening
 conflict=main_httppost,ask_find_most
-condition=find_most|#visitorname,rule-find-find-most,?|ÒªÕÒÊ²Ã´ÑùµÄ£¿|#visitornameÒª×î[]¡£=+±ãÒË+¹ó+Êµ»İ+Ôç+Íí~#visitornameÒªÖ±·É¡£=+Ö±´ï+Ö±·É~#visitornameÒªÖĞ×ª¡£=+ÖĞ×ª
+condition=find_most|#visitorname,rule-find-find-most,?|è¦æ‰¾ä»€ä¹ˆæ ·çš„ï¼Ÿ|#visitornameè¦æœ€[]ã€‚=+ä¾¿å®œ+è´µ+å®æƒ +æ—©+æ™š~#visitornameè¦ç›´é£ã€‚=+ç›´è¾¾+ç›´é£~#visitornameè¦ä¸­è½¬ã€‚=+ä¸­è½¬
 process=completed=true|select_by_additional_httppost=active|
 
 name=change_finish_order
 action=select
 status=listening
 conflict=main_httppost,ask_finish_order
-condition=finish_order|#visitorname,rule-find-finish-order,?|È·¶¨¶©Æ±Âğ£¿|#visitornameÏëÒªÏÂ¶©µ¥¡£=+ÏëÒª+Òª+ºÃ+ÊÇ+¶Ô+ÏÂµ¥+Âò-²»+OK+¶¨~#visitorname²»ÏëÒªÏÂ¶©µ¥¡£=+²»+²»Òª+²»Ïë+È¡Ïû~#visitornameÑ°ÕÒÆäËûº½°à¡£=+ÆäËû+±ğµÄ+±ğ+»»
+condition=finish_order|#visitorname,rule-find-finish-order,?|ç¡®å®šè®¢ç¥¨å—ï¼Ÿ|#visitornameæƒ³è¦ä¸‹è®¢å•ã€‚=+æƒ³è¦+è¦+å¥½+æ˜¯+å¯¹+ä¸‹å•+ä¹°-ä¸+OK+å®š+å¯ä»¥+å°±è¿™å¼ +ä¸‹å§+å—¯~#visitornameä¸æƒ³è¦ä¸‹è®¢å•ã€‚=+ä¸+ä¸è¦+ä¸æƒ³+å–æ¶ˆ
 process=completed=true|select_by_additional_httppost=active|
 
 name=choice_period
 action=select
 status=listening
-conflict=main_httppost,ask_decide_makeorder
-condition=choice_period|#visitorname,rule-find-choice-period,?|ÄãÏë¸ü¸ÄÊ±¼ä¶ÎÂğ£¿|#visitornameÏë°ÑÊ±¼ä¶Î¸ÄÎª[]¡£=++Ê±¼ä
+conflict=main_httppost,ask_choice_period
+condition=choice_period|#visitorname,rule-find-choice-period,?|ä½ æƒ³æ›´æ”¹æ—¶é—´æ®µå—ï¼Ÿ|#visitornameæƒ³æŠŠæ—¶é—´æ®µæ”¹ä¸º[]ã€‚=++æ—¶é—´
 process=completed=true|select_by_additional_httppost=active|
 
 name=choice_time
 action=select
 status=listening
-conflict=main_httppost,ask_decide_makeorder
-condition=choice_time:time|#visitorname,rule-find-choice-time,?|ÄãÏë¸ü¸ÄÊ±¼äÂğ£¿|#visitornameÏë°ÑÊ±¼ä¸ÄÎª[]¡£=++¿Û³ıÊ±¼ä
+conflict=main_httppost,ask_choice_time
+condition=choice_time:time|#visitorname,rule-find-choice-time,?|ä½ æƒ³æ›´æ”¹æ—¶é—´å—ï¼Ÿ|#visitornameæƒ³æŠŠæ—¶é—´æ”¹ä¸º[]ã€‚
 process=completed=true|select_by_additional_httppost=active|
 
 name=change_depart_time_direction
 action=select
 status=listening
 conflict=main_httppost,ask_depart_time_direction
-condition=change_depart_time_direction|#visitorname,rule-find-change-time-direction,?|ÒªÕÒ¸üÔçµÄ»¹ÊÇ¸üÍíµÄ£¿|#visitornameÒª¸ü[]µÄ¡£=+Ôç+Íí+Ç°+ºó+³Ù+ÌáÇ°+ÑÓÆÚ+Ôçµã+Ííµã+ÌáÔç+ÒÔºó
+condition=change_depart_time_direction|#visitorname,rule-find-change-time-direction,?|è¦æ‰¾æ›´æ—©çš„è¿˜æ˜¯æ›´æ™šçš„ï¼Ÿ|#visitornameè¦æ›´[]çš„ã€‚=+æ—©+æ™š+å‰+å+è¿Ÿ+æå‰+å»¶æœŸ+æ—©ç‚¹+æ™šç‚¹+ææ—©+ä»¥å
 process=completed=true|select_by_additional_httppost=active|
 
 name=change_depart_time_by_day
 action=select
 status=listening
 conflict=main_httppost,ask_depart_time_by_day
-condition=change_depart_time_by_day:number|#visitorname,rule-find-change-time-by-day,?|#visitornameÒª±ä¸ü[]Ìì¡£
+condition=change_depart_time_by_day:number|#visitorname,rule-find-change-time-by-day,?|#visitornameè¦å˜æ›´[]å¤©ã€‚
 process=completed=true|select_by_additional_httppost=active|
 
 name=change_depart_time_by_hour
 action=select
 status=listening
 conflict=main_httppost,ask_depart_time_by_hour
-condition=change_depart_time_by_hour:number|#visitorname,rule-find-change-time-by-hour,?|#visitornameÒª±ä¸ü[]Ğ¡Ê±¡£
+condition=change_depart_time_by_hour:number|#visitorname,rule-find-change-time-by-hour,?|#visitornameè¦å˜æ›´[]å°æ—¶ã€‚
 process=completed=true|select_by_additional_httppost=active|
 
 name=not_transfer
 action=select
 status=listening
-condition=not_transfer|#visitorname,rule-find-not-transfer,?|²»ÒªÖĞ×ªµÄÆ±|#visitornameÒªÖ±·É=+ÖĞ×ª
+condition=not_transfer|#visitorname,rule-find-not-transfer,?|ä¸è¦ä¸­è½¬çš„ç¥¨|#visitornameè¦ç›´é£=+ä¸­è½¬
 process=completed=true|select_by_additional_httppost=active|
 
 name=not_direct
 action=select
 status=listening
-condition=not_direct|#visitorname,rule-find-not-direct,?|²»ÒªÖ±·ÉµÄÆ±|#visitornameÒªÖĞ×ª=+Ö±·É+Ö±´ï
+condition=not_direct|#visitorname,rule-find-not-direct,?|ä¸è¦ç›´é£çš„ç¥¨|#visitornameè¦ä¸­è½¬=+ç›´é£+ç›´è¾¾
+process=completed=true|select_by_additional_httppost=active|
+
+name=change_flight
+action=select
+status=listening
+conflict=main_httppost,ask_change_flight
+condition=change_flight|#visitorname,rule-find-change-flight,?|æ¢èˆªç­|#visitornameå¯»æ‰¾å…¶ä»–èˆªç­ã€‚=+å…¶ä»–+åˆ«çš„+åˆ«+æ¢
 process=completed=true|select_by_additional_httppost=active|
 
 name=ask_decide_makeorder
 action=select
 status=waiting
-condition=makeorder:number|#visitorname,rule-find-order,?|ÄúÏëÑ¡ÔñµÚ¼¸¸ö£¿|#visitornameÏëÑ¡ÔñµÚ[]¸ö¡£
+condition=makeorder:number|#visitorname,rule-find-order,?|æ‚¨æƒ³é€‰æ‹©ç¬¬å‡ ä¸ªï¼Ÿ|#visitornameæƒ³é€‰æ‹©ç¬¬[]ä¸ªã€‚
 process=completed=true|select_by_additional_httppost=active|
 
 name=ask_start_loc
 action=select
 status=waiting
-condition=start:location|#visitorname,rule-find-start,?|ÄúÏë´ÓÄÄ¸ö³ÇÊĞ³ö·¢£¿|#visitornameÏë´Ó[]³ö·¢¡£
+condition=start:location|#visitorname,rule-find-start,?|æ‚¨æƒ³ä»å“ªä¸ªåŸå¸‚å‡ºå‘ï¼Ÿ|#visitornameæƒ³ä»[]å‡ºå‘ã€‚
 process=completed=true|select_by_additional_httppost=active|
 
 
 name=ask_destination_loc
 action=select
 status=waiting
-condition=destination:location|#visitorname,rule-find-destination,?|ÄúÏë·Éµ½ÄÄ¸ö³ÇÊĞ£¿|#visitornameÏë·Éµ½[]¡£
+fellow=select_by_additional_httppost
+condition=destination:location|#visitorname,rule-find-destination,?|æ‚¨æƒ³é£åˆ°å“ªä¸ªåŸå¸‚ï¼Ÿ|#visitornameæƒ³é£åˆ°[]ã€‚
 process=completed=true|select_by_additional_httppost=active|
 
 
 name=ask_round_trip
 action=select
 status=waiting
-condition=return|#visitorname,rule-find-return,?|ÊÇÍù·µ»¹ÊÇµ¥³Ì£¿|#visitornameÏë¶¨[]µÃÆ±¡£=+µ¥³Ì+Íù·µ+À´»Ø+·µ»Ø+·µ³Ì+·µ»ØµÄ
+condition=return|#visitorname,rule-find-return,?|æ˜¯å¾€è¿”è¿˜æ˜¯å•ç¨‹ï¼Ÿ|#visitornameæƒ³å®š[]å¾—ç¥¨ã€‚=+å•ç¨‹+å¾€è¿”+æ¥å›+è¿”å›+è¿”ç¨‹+è¿”å›çš„+å›ç¨‹+å›æ¥ 
 process=completed=true|select_by_additional_httppost=active|
 
 
 name=ask_departure_date
 action=select
 status=waiting
-condition=depart_time:time|#visitorname,rule-find-departtime,?|ÄúÏëÊ²Ã´Ê±ºò³ö·¢£¿|#visitornameÏëÔÚ[]³ö·¢¡£
+condition=depart_time:time|#visitorname,rule-find-departtime,?|æ‚¨æƒ³ä»€ä¹ˆæ—¶å€™å‡ºå‘ï¼Ÿ|#visitornameæƒ³åœ¨[]å‡ºå‘ã€‚
 process=completed=true|select_by_additional_httppost=active|
 
 
 name=ask_depart_day_calc
 action=select
 status=waiting
-condition=depart_day_calc:number|#visitorname,rule-find-depart-day-calc,?|ÄúÏë¼¸Ììºó³ö·¢£¿|#visitornameÏë[]Ììºó³ö·¢¡£
+condition=depart_day_calc:number|#visitorname,rule-find-depart-day-calc,?|æ‚¨æƒ³å‡ å¤©åå‡ºå‘ï¼Ÿ|#visitornameæƒ³[]å¤©åå‡ºå‘ã€‚
 process=completed=true|select_by_additional_httppost=active|
 
 
 name=ask_return_date
 action=select
 status=waiting
-condition=return_time:time|#visitorname,rule-find-returntime,?|ÄúÏëÊ²Ã´Ê±ºò·µ»Ø£¿|#visitornameÏë[]·µ»Ø¡£
+condition=return_time:time|#visitorname,rule-find-returntime,?|æ‚¨æƒ³ä»€ä¹ˆæ—¶å€™è¿”å›ï¼Ÿ|#visitornameæƒ³[]è¿”å›ã€‚
 process=completed=true|select_by_additional_httppost=active|
 
 
 name=ask_return_day_calc
 action=select
 status=waiting
-condition=return_day_calc:number|#visitorname,rule-find-return-day-calc,?|ÄúÏë¼¸Ììºó·µ»Ø£¿|#visitornameÏë[]Ììºó·µ»Ø¡£
+condition=return_day_calc:number|#visitorname,rule-find-return-day-calc,?|æ‚¨æƒ³å‡ å¤©åè¿”å›ï¼Ÿ|#visitornameæƒ³[]å¤©åè¿”å›ã€‚
 process=completed=true|select_by_additional_httppost=active|
 
 
 name=ask_cabin_class
 action=select
 status=waiting
-condition=cabinclass|#visitorname,rule-find-cabinclass,?|ÄúÑ¡ÔñÊ²Ã´²ÕÎ»£¿|#visitornameÏëÒª[]¡£=++²ÖÎ»
+condition=cabinclass|#visitorname,rule-find-cabinclass,?|æ‚¨é€‰æ‹©ä»€ä¹ˆèˆ±ä½ï¼Ÿ|#visitornameæƒ³è¦[]ã€‚=++ä»“ä½
 process=completed=true|select_by_additional_httppost=active|
 
 
 name=ask_ticket_amount
 action=select
 status=waiting
-condition=ticket_amount:number|#visitorname,rule-find-ticket-amount,?|ÄúÒª¼¸ÕÅÆ±£¿|#visitornameÏëÒª[]ÕÅÆ±¡£
+condition=ticket_amount:number|#visitorname,rule-find-ticket-amount,?|æ‚¨è¦å‡ å¼ ç¥¨ï¼Ÿ|#visitornameæƒ³è¦[]å¼ ç¥¨ã€‚
 process=completed=true|select_by_additional_httppost=active|
 
 name=ask_all_tickets_amount
 action=select
 status=waiting
-condition=all_tickets_amount:number|#visitorname,rule-find-ticket-amount,?|Ò»¹²ÓĞ¼¸Î»³ÉÈË£¬¼¸Î»¶ùÍ¯£¬¼¸Î»Ó¤¶ù£¿|#visitornameÓĞ[]Î»³ÉÈË¡£
+condition=all_tickets_amount:number|#visitorname,rule-find-ticket-amount,?|ä¸€å…±æœ‰å‡ ä½æˆäººï¼Œå‡ ä½å„¿ç«¥ï¼Œå‡ ä½å©´å„¿ï¼Ÿ|#visitornameæœ‰äººã€‚
 process=completed=true|select_by_additional_httppost=active|
 
 name=ask_adult_number
 action=select
 status=waiting
-condition=adult_number:number|#visitorname,rule-find-adultnumber,?|Ò»¹²ÓĞ¼¸Î»³ÉÈË£¿|Ò»¹²ÓĞ[]Î»³ÉÈË¡£
+condition=adult_number:number|#visitorname,rule-find-adultnumber,?|ä¸€å…±æœ‰å‡ ä½æˆäººï¼Ÿ|ä¸€å…±æœ‰[]ä½æˆäººã€‚
 process=completed=true|select_by_additional_httppost=active|
 
 
 name=ask_has_adult
 action=select
 status=waiting
-condition=has_adult|#visitorname,rule-find-hasadult,?|ÊÇ·ñÓĞ³ÉÈË£¿|ÓĞ³ÉÈË¡£=+ÓĞ-Ã»~Ã»ÓĞ³ÉÈË¡£=+Ã»ÓĞ
+condition=has_adult|#visitorname,rule-find-hasadult,?|æ˜¯å¦æœ‰æˆäººï¼Ÿ|æœ‰æˆäººã€‚=+æœ‰-æ²¡~æ²¡æœ‰æˆäººã€‚=+æ²¡æœ‰
 process=completed=true|select_by_additional_httppost=active|
 
 
 name=ask_included_child_number
 action=select
 status=waiting
-condition=included_child_number:number|#visitorname,rule-find-included-child-number,?|ÆäÖĞÓĞ¼¸Î»¶ùÍ¯£¿|ÆäÖĞÓĞ[]Î»¶ùÍ¯¡£
+condition=included_child_number:number|#visitorname,rule-find-included-child-number,?|å…¶ä¸­æœ‰å‡ ä½å„¿ç«¥ï¼Ÿ|å…¶ä¸­æœ‰[]ä½å„¿ç«¥ã€‚
 process=completed=true|select_by_additional_httppost=active|
 
 
 name=ask_child_number
 action=select
 status=waiting
-condition=child_number:number|#visitorname,rule-find-childnumber,?|Ò»¹²ÓĞ¼¸Î»¶ùÍ¯£¿|Ò»¹²ÓĞ[]Î»¶ùÍ¯¡£
+condition=child_number:number|#visitorname,rule-find-childnumber,?|ä¸€å…±æœ‰å‡ ä½å„¿ç«¥ï¼Ÿ|ä¸€å…±æœ‰[]ä½å„¿ç«¥ã€‚
 process=completed=true|select_by_additional_httppost=active|
 
 
 name=ask_has_child
 action=select
 status=waiting
-condition=has_child|#visitorname,rule-find-haschild,?|ÊÇ·ñÓĞ¶ùÍ¯£¿|ÓĞ¶ùÍ¯¡£=+ÓĞ-Ã»~Ã»ÓĞ¶ùÍ¯¡£=+Ã»ÓĞ
+condition=has_child|#visitorname,rule-find-haschild,?|æ˜¯å¦æœ‰å„¿ç«¥ï¼Ÿ|æœ‰å„¿ç«¥ã€‚=+æœ‰-æ²¡~æ²¡æœ‰å„¿ç«¥ã€‚=+æ²¡æœ‰
 process=completed=true|select_by_additional_httppost=active|
 
 
 name=ask_included_infant_number
 action=select
 status=waiting
-condition=included_infant_number:number|#visitorname,rule-find-included-infant-number,?|ÆäÖĞÓĞ¼¸Î»Ó¤¶ù£¿|ÆäÖĞÓĞ[]Î»Ó¤¶ù¡£
+condition=included_infant_number:number|#visitorname,rule-find-included-infant-number,?|å…¶ä¸­æœ‰å‡ ä½å©´å„¿ï¼Ÿ|å…¶ä¸­æœ‰[]ä½å©´å„¿ã€‚
 process=completed=true|select_by_additional_httppost=active|
 
 
 name=ask_in_seat_infant_number
 action=select
 status=waiting
-condition=in_seat_infant_number:number|#visitorname,rule-find-in-seat-infant-number,?|Ò»¹²Òª¼¸¸öÓ¤¶ù×ùÎ»£¿|Ó¤¶ù×ùÎ»Òª[]¸ö¡£
+condition=in_seat_infant_number:number|#visitorname,rule-find-in-seat-infant-number,?|ä¸€å…±è¦å‡ ä¸ªå©´å„¿åº§ä½ï¼Ÿ|å©´å„¿åº§ä½è¦[]ä¸ªã€‚
 process=completed=true|select_by_additional_httppost=active|
 
 
 name=ask_infant_number
 action=select
 status=waiting
-condition=infant_number:number|#visitorname,rule-find-infantnumber,?|Ò»¹²ÓĞ¼¸Î»Ó¤¶ù£¿|Ò»¹²ÓĞ[]Î»Ó¤¶ù¡£
+condition=infant_number:number|#visitorname,rule-find-infantnumber,?|ä¸€å…±æœ‰å‡ ä½å©´å„¿ï¼Ÿ|ä¸€å…±æœ‰[]ä½å©´å„¿ã€‚
 process=completed=true|select_by_additional_httppost=active|
 
 
 name=ask_has_infant
 action=select
 status=waiting
-condition=has_infant|#visitorname,rule-find-hasinfant,?|ÊÇ·ñÓĞÓ¤¶ù£¿|ÓĞÓ¤¶ù¡£=+ÓĞ-Ã»~Ã»ÓĞÓ¤¶ù¡£=+Ã»ÓĞ
+condition=has_infant|#visitorname,rule-find-hasinfant,?|æ˜¯å¦æœ‰å©´å„¿ï¼Ÿ|æœ‰å©´å„¿ã€‚=+æœ‰-æ²¡~æ²¡æœ‰å©´å„¿ã€‚=+æ²¡æœ‰
 process=completed=true|select_by_additional_httppost=active|
 
 
 name=ask_check_bag_number
 action=select
 status=waiting
-condition=check_bag_number:number|#visitorname,rule-find-checkbagnumber,?|Ò»¹²ÓĞ¼¸¸öÍĞÔËĞĞÀî£¿|Ò»¹²ÓĞ[]¸öÍĞÔËĞĞÀî¡£
+condition=check_bag_number:number|#visitorname,rule-find-checkbagnumber,?|ä¸€å…±æœ‰å‡ ä¸ªæ‰˜è¿è¡Œæï¼Ÿ|ä¸€å…±æœ‰[]ä¸ªæ‰˜è¿è¡Œæã€‚
 process=completed=true|select_by_additional_httppost=active|
 
 
 name=ask_has_check_bag
 action=select
 status=waiting
-condition=has_check_bag|#visitorname,rule-find-hascheckbag,?|ÊÇ·ñÓĞÍĞÔËĞĞÀî£¿|#visitornameÓĞÍĞÔËĞĞÀî¡£=+ÓĞ-Ã»~#visitornameÃ»ÓĞÍĞÔËĞĞÀî¡£=+Ã»ÓĞ
+condition=has_check_bag|#visitorname,rule-find-hascheckbag,?|æ˜¯å¦æœ‰æ‰˜è¿è¡Œæï¼Ÿ|#visitornameæœ‰æ‰˜è¿è¡Œæã€‚=+æœ‰-æ²¡~#visitornameæ²¡æœ‰æ‰˜è¿è¡Œæã€‚=+æ²¡æœ‰
 process=completed=true|select_by_additional_httppost=active|
 
 
 name=ask_bag_total_weight
 action=select
 status=waiting
-condition=bag_total_weight:number|#visitorname,rule-find-bagtotalweight,?|ÍĞÔËĞĞÀîµÄ×ÜÖØÁ¿ÊÇ¶àÉÙ£¿|ÍĞÔËĞĞÀîÒ»¹²[]µ¥Î»¡£
+condition=bag_total_weight:number|#visitorname,rule-find-bagtotalweight,?|æ‰˜è¿è¡Œæçš„æ€»é‡é‡æ˜¯å¤šå°‘ï¼Ÿ|æ‰˜è¿è¡Œæä¸€å…±[]å•ä½ã€‚
 process=completed=true|select_by_additional_httppost=active|
 
 
 name=ask_bag_weight_unit
 action=select
 status=waiting
-condition=bag_weight_unit|#visitorname,rule-find-bagweightunit,?|ÍĞÔËĞĞÀîµÄÖØÁ¿µ¥Î»ÊÇÊ²Ã´£¿|ÖØÁ¿µ¥Î»ÊÇ[]¡£=+°õ+¹«½ï+½ï+Ç§¿Ë+kg+KG+Kg+lb
+condition=bag_weight_unit|#visitorname,rule-find-bagweightunit,?|æ‰˜è¿è¡Œæçš„é‡é‡å•ä½æ˜¯ä»€ä¹ˆï¼Ÿ|é‡é‡å•ä½æ˜¯[]ã€‚=+ç£…+å…¬æ–¤+æ–¤+åƒå…‹+kg+KG+Kg+lb
 process=completed=true|select_by_additional_httppost=active|
 
 
 name=ask_bag_indi_weight
 action=select
 status=waiting
-condition=bag_indi_weight:number|#visitorname,rule-find-bagindiweight,?|ÍĞÔËĞĞÀîµÄ×î´óÖØÁ¿ÊÇ¶àÉÙ£¿|ÍĞÔËĞĞÀî×î´ó[]µ¥Î»¡£
+condition=bag_indi_weight:number|#visitorname,rule-find-bagindiweight,?|æ‰˜è¿è¡Œæçš„æœ€å¤§é‡é‡æ˜¯å¤šå°‘ï¼Ÿ|æ‰˜è¿è¡Œææœ€å¤§[]å•ä½ã€‚
 process=completed=true|select_by_additional_httppost=active|
 
 
 name=ask_cheap_flight
 action=select
 status=waiting
-condition=cheap_flight|#visitorname,rule-find-cheapflight,?|ÊÇ·ñÒªÁ®¼Ûº½¿Õ£¿|#visitornameÏëÒªÁ®¼Ûº½¿Õ¡£=Òª+ÏëÒª+Á®¼Ûº½¿Õ+Á®º½-²»~#visitorname²»ÏëÒªÁ®¼Ûº½¿Õ¡£=+²»Òª+²»ÏëÒª+²»+²»Ñ¡+±ğÑ¡+±ğ¸ø+ºöÂÔ
+condition=cheap_flight|#visitorname,rule-find-cheapflight,?|æ˜¯å¦è¦å»‰ä»·èˆªç©ºï¼Ÿ|#visitornameæƒ³è¦å»‰ä»·èˆªç©ºã€‚=è¦+æƒ³è¦+å»‰ä»·èˆªç©º+å»‰èˆª-ä¸~#visitornameä¸æƒ³è¦å»‰ä»·èˆªç©ºã€‚=+ä¸è¦+ä¸æƒ³è¦+ä¸+ä¸é€‰+åˆ«é€‰+åˆ«ç»™+å¿½ç•¥
 process=completed=true|select_by_additional_httppost=active|
 
 
 name=ask_want_comp
 action=select
 status=waiting
-condition=want_comp|#visitorname,rule-find-wantcomp,?|ÏëÑ¡ÓÃÄÄ¼Òº½¿Õ¹«Ë¾£¿|#visitornameÏëÑ¡ÓÃ[]µÄ»úÆ±¡£=++º½¿Õ¹«Ë¾
+condition=want_comp|#visitorname,rule-find-wantcomp,?|æƒ³é€‰ç”¨å“ªå®¶èˆªç©ºå…¬å¸ï¼Ÿ|#visitornameæƒ³é€‰ç”¨[]çš„æœºç¥¨ã€‚=++èˆªç©ºå…¬å¸
 process=completed=true|select_by_additional_httppost=active|
 
 
 name=ask_not_comp
 action=select
 status=waiting
-condition=not_comp|#visitorname,rule-find-notcomp,?|²»ÏëÑ¡ÓÃÄÄ¼Òº½¿Õ¹«Ë¾£¿|#visitorname²»ÏëÑ¡ÓÃ[]µÄ»úÆ±¡£=++º½¿Õ¹«Ë¾~#visitornameÒªÆäËû¹«Ë¾¡£=+ÆäËû+±ğµÄ+±ğ+»»
+condition=not_comp|#visitorname,rule-find-notcomp,?|ä¸æƒ³é€‰ç”¨å“ªå®¶èˆªç©ºå…¬å¸ï¼Ÿ|#visitornameä¸æƒ³é€‰ç”¨[]çš„æœºç¥¨ã€‚=++èˆªç©ºå…¬å¸~#visitornameè¦å…¶ä»–å…¬å¸ã€‚=+å…¶ä»–+åˆ«çš„+åˆ«+æ¢
 process=completed=true|select_by_additional_httppost=active|
 
 
 name=ask_want_plane
 action=select
 status=waiting
-condition=want_plane|#visitorname,rule-find-wantplane,?|ÏëÑ¡ÓÃÄÄÖÖ»úĞÍ£¿|#visitornameÏëÑ¡ÓÃ[]¡£=++»úĞÍ
+condition=want_plane|#visitorname,rule-find-wantplane,?|æƒ³é€‰ç”¨å“ªç§æœºå‹ï¼Ÿ|#visitornameæƒ³é€‰ç”¨[]ã€‚=++æœºå‹
 process=completed=true|select_by_additional_httppost=active|
 
 
 name=ask_not_plane
 action=select
 status=waiting
-condition=not_plane|#visitorname,rule-find-notplane,?|²»ÏëÑ¡ÓÃÄÄÖÖ»úĞÍ£¿|#visitorname²»ÏëÑ¡ÓÃ[]¡£=++»úĞÍ
+condition=not_plane|#visitorname,rule-find-notplane,?|ä¸æƒ³é€‰ç”¨å“ªç§æœºå‹ï¼Ÿ|#visitornameä¸æƒ³é€‰ç”¨[]ã€‚=++æœºå‹
 process=completed=true|select_by_additional_httppost=active|
 
 
 name=ask_depart_board_time
 action=select
 status=waiting
-condition=depart_board_time:time|#visitorname,rule-find-depart-board-time,?|ÏëÑ¡ÓÃÊ²Ã´µÇ»úÊ±¼ä£¿|#visitornameÏëÔÚ[]Ê±µÇ»ú¡£
+condition=depart_board_time:time|#visitorname,rule-find-depart-board-time,?|å»ç¨‹æƒ³é€‰ç”¨ä»€ä¹ˆç™»æœºæ—¶é—´ï¼Ÿ|#visitornameè¦åœ¨[]ç™»æœºå¾€å»é£ã€‚
 process=completed=true|select_by_additional_httppost=active|
 
 
 name=ask_return_board_time
 action=select
 status=waiting
-condition=return_board_time:time|#visitorname,rule-find-return-board-time,?|»Ø³ÌÏëÑ¡ÓÃÊ²Ã´µÇ»úÊ±¼ä£¿|»Ø³ÌÊ±£¬#visitornameÏëÔÚ[]Ê±µÇ»ú¡£
+condition=return_board_time:time|#visitorname,rule-find-return-board-time,?|å›ç¨‹æƒ³é€‰ç”¨ä»€ä¹ˆç™»æœºæ—¶é—´ï¼Ÿ|#visitornameè¦åœ¨[]ä¸Šäº†é£æœºå¾€å›é£ã€‚
 process=completed=true|select_by_additional_httppost=active|
 
 
 name=ask_depart_board_period
 action=select
 status=waiting
-condition=depart_board_period|#visitorname,rule-find-depart-board-period,?|È¥³ÌÏëÑ¡ÓÃÊ²Ã´Ê±¼ä¶ÎµÇ»ú£¿|È¥³ÌÊ±£¬#visitornameÏë[]µÇ»ú¡£=+ÔçÉÏ+Ôç³¿+ÉÏÎç+ÖĞÎç+ÏÂÎç+ÍíÉÏ+Ò¹Àï+Áè³¿
+condition=depart_board_period|#visitorname,rule-find-depart-board-period,?|å»ç¨‹æƒ³é€‰ç”¨ä»€ä¹ˆæ—¶é—´æ®µç™»æœºï¼Ÿ|#visitornameè¦åœ¨[]ç™»æœºå¾€å»é£ã€‚=+æ—©ä¸Š+æ—©æ™¨+ä¸Šåˆ+ä¸­åˆ+ä¸‹åˆ+æ™šä¸Š+å¤œé‡Œ+å‡Œæ™¨
 process=completed=true|select_by_additional_httppost=active|
 
 
 name=ask_return_board_period
 action=select
 status=waiting
-condition=return_board_period|#visitorname,rule-find-return-board-period,?|»Ø³ÌÏëÑ¡ÓÃÊ²Ã´Ê±¼ä¶ÎµÇ»ú£¿|»Ø³ÌÊ±£¬#visitornameÏë[]µÇ»ú¡£=+ÔçÉÏ+Ôç³¿+ÉÏÎç+ÖĞÎç+ÏÂÎç+ÍíÉÏ+Ò¹Àï+Áè³¿
+condition=return_board_period|#visitorname,rule-find-return-board-period,?|å›ç¨‹æƒ³é€‰ç”¨ä»€ä¹ˆæ—¶é—´æ®µç™»æœºï¼Ÿ|#visitornameè¦åœ¨[]ä¸Šäº†é£æœºå¾€å›é£ã€‚=+æ—©ä¸Š+æ—©æ™¨+ä¸Šåˆ+ä¸­åˆ+ä¸‹åˆ+æ™šä¸Š+å¤œé‡Œ+å‡Œæ™¨
 process=completed=true|select_by_additional_httppost=active|
 
 
 name=ask_depart_not_board_time
 action=select
 status=waiting
-condition=depart_not_board_time:time|#visitorname,rule-find-depart-not-board-time,?|²»ÏëÑ¡ÓÃÊ²Ã´µÇ»úÊ±¼ä£¿|#visitorname²»ÏëÔÚ[]Ê±µÇ»ú¡£
+condition=depart_not_board_time:time|#visitorname,rule-find-depart-not-board-time,?|å»ç¨‹ä¸æƒ³é€‰ç”¨ä»€ä¹ˆç™»æœºæ—¶é—´ï¼Ÿ|#visitornameä¸è¦åœ¨[]ç™»æœºå¾€å»é£ã€‚
 process=completed=true|select_by_additional_httppost=active|
 
 
 name=ask_return_not_board_time
 action=select
 status=waiting
-condition=return_not_board_time:time|#visitorname,rule-find-return-board-time,?|»Ø³Ì²»ÏëÑ¡ÓÃÊ²Ã´µÇ»úÊ±¼ä£¿|»Ø³ÌÊ±£¬#visitorname²»ÏëÔÚ[]Ê±µÇ»ú¡£
+condition=return_not_board_time:time|#visitorname,rule-find-return-not-board-time,?|å›ç¨‹ä¸æƒ³é€‰ç”¨ä»€ä¹ˆç™»æœºæ—¶é—´ï¼Ÿ|#visitornameä¸è¦åœ¨[]ç™»æœºå¾€å›é£ã€‚
 process=completed=true|select_by_additional_httppost=active|
 
 
 name=ask_depart_not_board_period
 action=select
 status=waiting
-condition=depart_not_board_period|#visitorname,rule-find-depart-not-board-period,?|È¥³Ì²»ÏëÑ¡ÓÃÊ²Ã´Ê±¼ä¶ÎµÇ»ú£¿|È¥³ÌÊ±£¬#visitorname²»Ïë[]µÇ»ú¡£=+ÔçÉÏ+Ôç³¿+ÉÏÎç+ÖĞÎç+ÏÂÎç+ÍíÉÏ+Ò¹Àï+Áè³¿
+condition=depart_not_board_period|#visitorname,rule-find-depart-not-board-period,?|å»ç¨‹ä¸æƒ³é€‰ç”¨ä»€ä¹ˆæ—¶é—´æ®µç™»æœºï¼Ÿ|#visitornameä¸è¦åœ¨[]ç™»æœºå¾€å»é£ã€‚=+æ—©ä¸Š+æ—©æ™¨+ä¸Šåˆ+ä¸­åˆ+ä¸‹åˆ+æ™šä¸Š+å¤œé‡Œ+å‡Œæ™¨
 process=completed=true|select_by_additional_httppost=active|
 
 
 name=ask_return_not_board_period
 action=select
 status=waiting
-condition=return_not_board_period|#visitorname,rule-find-return-not-board-period,?|»Ø³Ì²»ÏëÑ¡ÓÃÊ²Ã´Ê±¼ä¶ÎµÇ»ú£¿|»Ø³ÌÊ±£¬#visitorname²»Ïë[]µÇ»ú¡£=+ÔçÉÏ+Ôç³¿+ÉÏÎç+ÖĞÎç+ÏÂÎç+ÍíÉÏ+Ò¹Àï+Áè³¿
+condition=return_not_board_period|#visitorname,rule-find-return-not-board-period,?|å›ç¨‹ä¸æƒ³é€‰ç”¨ä»€ä¹ˆæ—¶é—´æ®µç™»æœºï¼Ÿ|#visitornameä¸è¦åœ¨[]ç™»æœºå¾€å›é£ã€‚=+æ—©ä¸Š+æ—©æ™¨+ä¸Šåˆ+ä¸­åˆ+ä¸‹åˆ+æ™šä¸Š+å¤œé‡Œ+å‡Œæ™¨
 process=completed=true|select_by_additional_httppost=active|
 
 name=ask_depart_arrival_time
 action=select
 status=waiting
-condition=ddepart_arrival_time:time|#visitorname,rule-find-depart-arrival-time,?|È¥³ÌÏëÒªÊ²Ã´Ê±¼äµÖ´ï£¿|È¥³ÌÊ±£¬#visitornameÏëÔÚ[]Ê±µÖ´ï¡£
+condition=depart_arrival_time:time|#visitorname,rule-find-depart-arrival-time,?|å»ç¨‹æƒ³è¦ä»€ä¹ˆæ—¶é—´æŠµè¾¾ï¼Ÿ|#visitornameè¦åœ¨[]å¾€å»é£æ—¶æŠµè¾¾ã€‚
 process=completed=true|select_by_additional_httppost=active|
 
 name=ask_return_arrival_time
 action=select
 status=waiting
-condition=return_arrival_time:time|#visitorname,rule-find-return-arrival-time,?|»Ø³ÌÏëÑ¡ÓÃÊ²Ã´Ê±¼äµÖ´ï£¿|»Ø³ÌÊ±£¬#visitornameÏëÔÚ[]Ê±µÖ´ï¡£
+condition=return_arrival_time:time|#visitorname,rule-find-return-arrival-time,?|å›ç¨‹æƒ³è¦ä»€ä¹ˆæ—¶é—´æŠµè¾¾ï¼Ÿ|#visitornameæƒ³åœ¨[]å¾€å›é£æ—¶æŠµè¾¾ã€‚
 process=completed=true|select_by_additional_httppost=active|
 
 
 name=ask_depart_arrival_period
 action=select
 status=waiting
-condition=depart_arrival_period|#visitorname,rule-find-depart-arrival-period,?|È¥³ÌÏëÑ¡ÓÃÊ²Ã´Ê±¼ä¶ÎµÖ´ï£¿|È¥³ÌÊ±£¬#visitornameÏë[]µÖ´ï¡£=+ÔçÉÏ+Ôç³¿+ÉÏÎç+ÖĞÎç+ÏÂÎç+ÍíÉÏ+Ò¹Àï+Áè³¿
+condition=depart_arrival_period|#visitorname,rule-find-depart-arrival-period,?|å»ç¨‹æƒ³é€‰ç”¨ä»€ä¹ˆæ—¶é—´æ®µæŠµè¾¾ï¼Ÿ|#visitornameè¦åœ¨[]å¾€å»é£æ—¶æŠµè¾¾ã€‚=+æ—©ä¸Š+æ—©æ™¨+ä¸Šåˆ+ä¸­åˆ+ä¸‹åˆ+æ™šä¸Š+å¤œé‡Œ+å‡Œæ™¨
 process=completed=true|select_by_additional_httppost=active|
 
 
 name=ask_return_arrival_period
 action=select
 status=waiting
-condition=return_arrival_period|#visitorname,rule-find-return-arrival-period,?|»Ø³ÌÏëÑ¡ÓÃÊ²Ã´Ê±¼ä¶ÎµÖ´ï£¿|È¥³ÌÊ±£¬#visitornameÏë[]µÖ´ï¡£=+ÔçÉÏ+Ôç³¿+ÉÏÎç+ÖĞÎç+ÏÂÎç+ÍíÉÏ+Ò¹Àï+Áè³¿
+condition=return_arrival_period|#visitorname,rule-find-return-arrival-period,?|å›ç¨‹æƒ³é€‰ç”¨ä»€ä¹ˆæ—¶é—´æ®µæŠµè¾¾ï¼Ÿ|#visitornameæƒ³åœ¨[]å¾€å›é£æ—¶æŠµè¾¾ã€‚=+æ—©ä¸Š+æ—©æ™¨+ä¸Šåˆ+ä¸­åˆ+ä¸‹åˆ+æ™šä¸Š+å¤œé‡Œ+å‡Œæ™¨
 process=completed=true|select_by_additional_httppost=active|
 
 
 name=ask_depart_not_arrival_time
 action=select
 status=waiting
-condition=depart_not_arrival_time:time|#visitorname,rule-find-depart-not-arrival-time,?|È¥³Ì²»ÏëÒªÊ²Ã´Ê±¼äµÖ´ï£¿|#visitorname²»ÏëÔÚ[]Ê±µÖ´ï¡£
+condition=depart_not_arrival_time:time|#visitorname,rule-find-depart-not-arrival-time,?|å»ç¨‹ä¸æƒ³è¦ä»€ä¹ˆæ—¶é—´æŠµè¾¾ï¼Ÿ|#visitornameä¸è¦åœ¨[]å¾€å»é£æ—¶æŠµè¾¾ã€‚
 process=completed=true|select_by_additional_httppost=active|
 
 
 name=ask_return_not_arrival_time
 action=select
 status=waiting
-condition=return_not_arrival_time:time|#visitorname,rule-find-return-not-arrival-time,?|»Ø³Ì²»ÏëÑ¡ÓÃÊ²Ã´Ê±¼äµÖ´ï£¿|»Ø³ÌÊ±£¬#visitorname²»ÏëÔÚ[]Ê±µÖ´ï¡£
+condition=return_not_arrival_time:time|#visitorname,rule-find-return-not-arrival-time,?|å›ç¨‹ä¸æƒ³è¦ä»€ä¹ˆæ—¶é—´æŠµè¾¾ï¼Ÿ|#visitornameä¸è¦åœ¨[]å¾€å›é£æ—¶æŠµè¾¾ã€‚
 process=completed=true|select_by_additional_httppost=active|
 
 
 name=ask_depart_not_arrival_period
 action=select
 status=waiting
-condition=depart_not_arrival_period|#visitorname,rule-find-depart-not-arrival-period,?|È¥³Ì²»ÏëÑ¡ÓÃÊ²Ã´Ê±¼ä¶ÎµÖ´ï£¿|È¥³ÌÊ±£¬#visitorname²»Ïë[]µÖ´ï¡£=+ÔçÉÏ+Ôç³¿+ÉÏÎç+ÖĞÎç+ÏÂÎç+ÍíÉÏ+Ò¹Àï+Áè³¿
+condition=depart_not_arrival_period|#visitorname,rule-find-depart-not-arrival-period,?|å»ç¨‹ä¸æƒ³é€‰ç”¨ä»€ä¹ˆæ—¶é—´æ®µæŠµè¾¾ï¼Ÿ|#visitornameä¸è¦åœ¨[]å¾€å»é£æ—¶æŠµè¾¾ã€‚=+æ—©ä¸Š+æ—©æ™¨+ä¸Šåˆ+ä¸­åˆ+ä¸‹åˆ+æ™šä¸Š+å¤œé‡Œ+å‡Œæ™¨
 process=completed=true|select_by_additional_httppost=active|
 
 
 name=ask_return_not_arrival_period
 action=select
 status=waiting
-condition=return_not_arrival_period|#visitorname,rule-find-return-not-arrival-period,?|»Ø³Ì²»ÏëÑ¡ÓÃÊ²Ã´Ê±¼ä¶ÎµÖ´ï£¿|»Ø³ÌÊ±£¬#visitorname²»Ïë[]µÖ´ï¡£=+ÔçÉÏ+Ôç³¿+ÉÏÎç+ÖĞÎç+ÏÂÎç+ÍíÉÏ+Ò¹Àï+Áè³¿
+condition=return_not_arrival_period|#visitorname,rule-find-return-not-arrival-period,?|å›ç¨‹ä¸æƒ³é€‰ç”¨ä»€ä¹ˆæ—¶é—´æ®µæŠµè¾¾ï¼Ÿ|#visitornameä¸è¦åœ¨[]å¾€å›é£æ—¶æŠµè¾¾ã€‚=+æ—©ä¸Š+æ—©æ™¨+ä¸Šåˆ+ä¸­åˆ+ä¸‹åˆ+æ™šä¸Š+å¤œé‡Œ+å‡Œæ™¨
 process=completed=true|select_by_additional_httppost=active|
 
 
 name=ask_price_ceiling
 action=select
 status=waiting
-condition=price_ceiling:number|#visitorname,rule-find-priceceiling,?|»úÆ±µÄ×î¸ß¼Û¸ñÊÇ£¿|#visitornameÄÜ¹»½ÓÊÜµÄ×î¸ß¼Û¸ñÊÇ[]Ôª¡£
+condition=price_ceiling:number|#visitorname,rule-find-priceceiling,?|æœºç¥¨çš„æœ€é«˜ä»·æ ¼æ˜¯ï¼Ÿ|#visitornameèƒ½å¤Ÿæ¥å—çš„æœ€é«˜ä»·æ ¼æ˜¯[]å…ƒã€‚
 process=completed=true|select_by_additional_httppost=active|
 
 
 name=ask_has_price_ceiling
 action=select
 status=waiting
-condition=has_price_ceiling|#visitorname,rule-find-haspriceceiling,?|»úÆ±µÄ×î¸ß¼Û¸ñÊÇ£¿|#visitornameÓĞ×î¸ß¼Û¸ñ¡£=+ÓĞ-Ã»~#visitornameÃ»ÓĞ×î¸ß¼Û¸ñ¡£=+Ã»ÓĞ
+condition=has_price_ceiling|#visitorname,rule-find-haspriceceiling,?|æœºç¥¨çš„æœ€é«˜ä»·æ ¼æ˜¯ï¼Ÿ|#visitornameæœ‰æœ€é«˜ä»·æ ¼ã€‚=+æœ‰-æ²¡~#visitornameæ²¡æœ‰æœ€é«˜ä»·æ ¼ã€‚=+æ²¡æœ‰
 process=completed=true|select_by_additional_httppost=active|
 
 
 name=ask_price_floor
 action=select
 status=waiting
-condition=price_floor:number|#visitorname,rule-find-pricefloor,?|»úÆ±µÄ×îµÍ¼Û¸ñÊÇ£¿|#visitornameÄÜ¹»½ÓÊÜµÄ×îµÍ¼Û¸ñÊÇ[]Ôª¡£
+condition=price_floor:number|#visitorname,rule-find-pricefloor,?|æœºç¥¨çš„æœ€ä½ä»·æ ¼æ˜¯ï¼Ÿ|#visitornameèƒ½å¤Ÿæ¥å—çš„æœ€ä½ä»·æ ¼æ˜¯[]å…ƒã€‚
 process=completed=true|select_by_additional_httppost=active|
 
 
 name=ask_has_price_floor
 action=select
 status=waiting
-condition=has_price_floor|#visitorname,rule-find-haspricefloor,?|»úÆ±µÄ×îµÍ¼Û¸ñÊÇ£¿|#visitornameÓĞ×îµÍ¼Û¸ñ¡£=+ÓĞ-Ã»~#visitornameÃ»ÓĞ×îµÍ¼Û¸ñ¡£=+Ã»ÓĞ
+condition=has_price_floor|#visitorname,rule-find-haspricefloor,?|æœºç¥¨çš„æœ€ä½ä»·æ ¼æ˜¯ï¼Ÿ|#visitornameæœ‰æœ€ä½ä»·æ ¼ã€‚=+æœ‰-æ²¡~#visitornameæ²¡æœ‰æœ€ä½ä»·æ ¼ã€‚=+æ²¡æœ‰
 process=completed=true|select_by_additional_httppost=active|
 
 
 name=ask_sort
 action=select
 status=waiting
-condition=sort_by|#visitorname,rule-find-sortby,?|°´ÕÕÊ²Ã´Ë³ĞòÅÅÁĞ£¿|#visitornameÏëÒª°´ÕÕ[]Ë³ĞòÀ´ÅÅÁĞ¡£=+¼Û¸ñ+Ê±¼ä+×ÛºÏ
+condition=sort_by|#visitorname,rule-find-sortby,?|æŒ‰ç…§ä»€ä¹ˆé¡ºåºæ’åˆ—ï¼Ÿ|#visitornameæƒ³è¦æŒ‰ç…§[]é¡ºåºæ¥æ’åˆ—ã€‚=+ä»·æ ¼+æ—¶é—´+ç»¼åˆ
 process=completed=true|select_by_additional_httppost=active|
 
 
 name=ask_find_most
 action=select
 status=waiting
-condition=find_most|#visitorname,rule-find-find-most,?|ÒªÕÒÊ²Ã´ÑùµÄ£¿|#visitornameÒª×î[]¡£=+±ãÒË+¹ó+Êµ»İ+Ôç+Íí~#visitornameÒªÖ±·É¡£=+Ö±´ï+Ö±·É~#visitornameÒªÖĞ×ª¡£=+ÖĞ×ª
+condition=find_most|#visitorname,rule-find-find-most,?|è¦æ‰¾ä»€ä¹ˆæ ·çš„ï¼Ÿ|#visitornameè¦æœ€[]ã€‚=+ä¾¿å®œ+è´µ+å®æƒ +æ—©+æ™š~#visitornameè¦ç›´é£ã€‚=+ç›´è¾¾+ç›´é£~#visitornameè¦ä¸­è½¬ã€‚=+ä¸­è½¬
 process=completed=true|select_by_additional_httppost=active|
 
 
 name=ask_finish_order
 action=select
 status=waiting
-condition=finish_order|#visitorname,rule-find-finish-order,?|Òª¶©ÕâÕÅÆ±Âğ£¿|#visitornameÏëÒªÏÂ¶©µ¥¡£=+ÏëÒª+Òª+ºÃ+ÊÇ+¶Ô+ÏÂµ¥+¶©+Âò-²»+¶¨+OK~#visitorname²»ÏëÒªÏÂ¶©µ¥¡£=+²»+²»Òª+²»Ïë+È¡Ïû~#visitornameÑ°ÕÒÆäËûº½°à¡£=+ÆäËû+±ğµÄ+±ğ+»»
+condition=finish_order|#visitorname,rule-find-finish-order,?|è¦è®¢è¿™å¼ ç¥¨å—ï¼Ÿ|#visitornameæƒ³è¦ä¸‹è®¢å•ã€‚=+ä¸é”™+æƒ³è¦+è¦+å¥½+æ˜¯+å¯¹+ä¸‹å•+è®¢+ä¹°+å®š+å¯ä»¥+å°±è¿™å¼ +OK+ä¸‹å§+å—¯~#visitornameä¸æƒ³è¦ä¸‹è®¢å•ã€‚=+ä¸+ä¸è¦+ä¸æƒ³+å–æ¶ˆ
 process=completed=true|select_by_additional_httppost=active|
 
 name=ask_choice_period
 action=select
 status=waiting
-condition=choice_period|#visitorname,rule-find-choice-period,?|ÄãÏë¸ü¸ÄÊ±¼ä¶ÎÂğ£¿|#visitornameÏë°ÑÊ±¼ä¶Î¸ÄÎª[]¡£=++Ê±¼ä
+condition=choice_period|#visitorname,rule-find-choice-period,?|ä½ æƒ³æ›´æ”¹æ—¶é—´æ®µå—ï¼Ÿ|#visitornameæƒ³æŠŠæ—¶é—´æ®µæ”¹ä¸º[]ã€‚=++æ—¶é—´
 process=completed=true|select_by_additional_httppost=active|
 
 
 name=ask_choice_time
 action=select
 status=waiting
-condition=choice_time:time|#visitorname,rule-find-choice-time,?|ÄãÏë¸ü¸ÄÊ±¼äÂğ£¿|#visitornameÏë°ÑÊ±¼ä¸ÄÎª[]¡£=++¿Û³ıÊ±¼ä
+condition=choice_time:time|#visitorname,rule-find-choice-time,?|ä½ æƒ³æ›´æ”¹æ—¶é—´å—ï¼Ÿ|#visitornameæƒ³æŠŠæ—¶é—´æ”¹ä¸º[]ã€‚
 process=completed=true|select_by_additional_httppost=active|
 
+name=ask_find_reverse
+action=select
+status=waiting
+condition=find_reverse|#visitorname,rule-find-reverse,?|ä¸è¦æ‰¾ä»€ä¹ˆæ ·çš„?|#visitornameæƒ³é€‰æ‹©[]åå‘çš„ã€‚=+ä¾¿å®œ+è´µ+æ—©+æ™š+å¥½è´µ+è¿Ÿ
+process=completed=true|select_by_additional_httppost=active|
+
+name=ask_change_flight
+action=select
+status=waiting
+condition=change_flight|#visitorname,rule-find-change-flight,?|æ¢èˆªç­|#visitornameå¯»æ‰¾å…¶ä»–èˆªç­ã€‚=+å…¶ä»–+åˆ«çš„+åˆ«+æ¢
+process=completed=true|select_by_additional_httppost=active|
 
 
